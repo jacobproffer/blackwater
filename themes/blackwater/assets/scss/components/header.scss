@@ -42,6 +42,11 @@
     }
   }
 
+  &__nav {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
   &__skip-link {
     position: fixed;
     top: -2.5em;

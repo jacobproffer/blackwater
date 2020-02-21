@@ -10,7 +10,13 @@ theme = "blackwater"
 [menu]
 
   [[menu.main]]
-    identifier = "series"
-    name = "Series"
-    url = "/series/"
+    identifier = "About"
+    name = "About"
+    url = "/about/"
     weight = 1
+
+  [[menu.main]]
+    identifier = "Operations"
+    name = "Operations"
+    url = "/operations/"
+    weight = 2
