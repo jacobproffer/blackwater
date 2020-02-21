@@ -7,11 +7,7 @@ h2 {
 h1 {
   @include font-size($h1-font-sizes);
   margin: 0;
-
-  & + span {
-    display: block;
-    margin-top: 10px;
-  }
+  letter-spacing: .1rem;
 }
 
 h2 {

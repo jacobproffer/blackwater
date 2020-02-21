@@ -1,12 +1,12 @@
 .home-hero {
   position: relative;
-  padding: 255px 0 170px;
+  padding: 285px 0 200px;
   background-image: radial-gradient(circle farthest-corner at center bottom, rgba(19, 26, 30, .9) 0%, rgba(19, 26, 30, .9) 100%), url('http://images.akamai.steamusercontent.com/ugc/89343685256734062/A7E035AAA1FE22B742444C4564A47D4EB4268BE9/');
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
 
-  header {
+  .container {
     position: relative;
   }
 
