@@ -1,0 +1,44 @@
+<header class="main-header">
+  <div class="container">
+
+    <a class="main-header__skip-link" href="#content">Skip to Main Content</a>
+
+    <div class="grid main-header__grid">
+
+      {{ if .Site.Menus.main }}
+        <nav class="justify-start" aria-label="primary-navigation">
+          <ul class="main-header__nav unstyled-list">
+
+            {{ $currentPage := . }}
+
+            {{ range .Site.Menus.main }}
+              <li class="main-header__nav-item">
+                <a
+                  href="{{ .URL }}"
+                  {{ if $currentPage.IsMenuCurrent "main" . }}
+                    aria-current="page"
+                  {{ end }}
+                >
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+
+          </ul>
+        </nav>
+      {{ end }}
+
+      <a class="main-header__logo" href="{{ .Site.BaseURL }}">
+        <img src="/images/blackwater-logo.svg" alt="Blackwater USA">
+      </a>
+
+      <ul class="unstyled-list justify-end">
+        <li>
+          <a href="#">Test</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</header>

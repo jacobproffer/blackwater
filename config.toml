@@ -1,0 +1,16 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Blackwater USA"
+theme = "blackwater"
+
+[params]
+  subTitle = "Front-End Developer and Traveler"
+  description = "This is a starter shell for Hugo."
+
+[menu]
+
+  [[menu.main]]
+    identifier = "series"
+    name = "Series"
+    url = "/series/"
+    weight = 1

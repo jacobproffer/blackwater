@@ -1,0 +1,24 @@
+.visually-hide {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  clip: rec(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+.justify-start {
+  justify-self: start;
+}
+
+.justify-end {
+  justify-self: end;
+}
+
+.unstyled-list {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}

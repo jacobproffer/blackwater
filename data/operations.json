@@ -1,0 +1,67 @@
+[
+  {
+    "Map": "G.O.S Dariyah",
+    "Date": "2020-01-08",
+    "Win": false
+  },
+  {
+    "Map": "G.O.S Dariyah",
+    "Date": "2020-01-11",
+    "Win": false
+  },
+  {
+    "Map": "G.O.S Dariyah",
+    "Date": "2020-01-15",
+    "Win": false
+  },
+  {
+    "Map": "Tanoa",
+    "Date": "2020-01-18",
+    "Win": true
+  },
+  {
+    "Map": "Tanoa",
+    "Date": "2020-01-22",
+    "Win": false
+  },
+  {
+    "Map": "G.O.S Kalu Khan",
+    "Date": "2020-01-25",
+    "Win": true
+  },
+  {
+    "Map": "G.O.S Dariyah",
+    "Date": "2020-01-29",
+    "Win": true
+  },
+  {
+    "Map": "Chernarus (Autumn)",
+    "Date": "2020-02-01",
+    "Win": false
+  },
+  {
+    "Map": "Chernarus (Autumn)",
+    "Date": "2020-02-05",
+    "Win": false
+  },
+  {
+    "Map": "Lythium",
+    "Date": "2020-02-08",
+    "Win": true
+  },
+  {
+    "Map": "Lythium",
+    "Date": "2020-02-12",
+    "Win": true
+  },
+  {
+    "Map": "Al Salman, Iraq",
+    "Date": "2020-02-15",
+    "Win": true
+  },
+  {
+    "Map": "Al Salman, Iraq",
+    "Date": "2020-02-19",
+    "Win": true
+  }
+]

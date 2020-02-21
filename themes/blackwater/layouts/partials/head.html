@@ -1,0 +1,37 @@
+{{ $sass := resources.Get "scss/main.scss" }}
+{{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice)) }}
+{{ $style := $sass | resources.ToCSS $options }}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>
+    {{ if .IsHome }}
+      {{ .Site.Title }} | {{ .Site.Params.subTitle }}
+    {{ else }}
+      {{ .Title }} | {{ .Site.Title }}
+    {{ end }}
+  </title>
+
+  <meta
+    name="description"
+    content="
+      {{ if .IsHome }}
+        {{ .Site.Params.description }}
+      {{ else }}
+        {{ .Description }}
+      {{ end }}
+    "
+  />
+
+  {{ template "_internal/opengraph.html" . }}
+
+  {{ template "_internal/twitter_cards.html" . }}
+
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for Blackwater USA" href="{{ "/index.xml" | absURL }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+</head>
