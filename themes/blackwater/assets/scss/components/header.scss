@@ -3,15 +3,13 @@
   position: fixed;
   z-index: 9;
   padding: 15px 0;
-  background-color: rgba(24, 24, 24, .8);
-  border-bottom: var(--border);
+  background-color: transparent;
   overflow-y: visible;
-  transition: padding 300ms ease-in-out, transform 300ms ease-in-out, color 300ms ease-in-out;
+  transition: padding 300ms ease-in-out, transform 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border 300ms ease-in-out;
   will-change: transform;
 
   a {
-    font-size: 0.8889rem;
-    letter-spacing: .1rem;
+    letter-spacing: .2rem;
     text-transform: uppercase;
 
     &[aria-current="page"] {
@@ -25,6 +23,8 @@
 
   &.pinned {
     padding: 12px 0;
+    background-color: var(--black);
+    border-bottom: var(--border);
     transform: translateY(0);
   }
 

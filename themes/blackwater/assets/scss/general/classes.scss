@@ -22,3 +22,11 @@
     list-style: none;
   }
 }
+
+.section-padding {
+  padding: var(--padding);
+}
+
+.border-top {
+  border-top: var(--border);
+}

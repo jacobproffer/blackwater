@@ -1,10 +1,10 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Blackwater USA"
+title = "Blackwater"
 theme = "blackwater"
 
 [params]
-  subTitle = "premier source for all of your security services"
+  subTitle = "The Premier Source for All of Your Security Services"
   description = "This is a starter shell for Hugo."
 
 [menu]

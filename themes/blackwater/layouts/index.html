@@ -1,15 +1,7 @@
 {{ define "main" }}
 
-<section class="home-hero">
-  <div class="container">
+{{ partial "home/hero" . }}
 
-    <small>01</small>
-    <header>
-      <h1>{{ .Title }}</h1>
-    </header>
-    <p>The premier source for all of your security services needs including: security officers, bodyguard services, executive protection services and more. </p>
-
-  </div>
-</section>
+{{ partial "home/about" }}
 
 {{ end }}

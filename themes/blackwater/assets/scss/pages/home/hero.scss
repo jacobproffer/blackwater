@@ -10,10 +10,6 @@
     position: relative;
   }
 
-  small {
-    color: var(--red);
-  }
-
   p {
     max-width: 60ch;
   }
@@ -28,5 +24,10 @@
     background: repeating-linear-gradient(top, transparent 0, transparent 1px, rgba(0, 0, 0, .2) 1px, rgba(0, 0, 0, .2) 3px);
     background-size: 100% 4px;
     pointer-events: none;
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: 40px;
   }
 }

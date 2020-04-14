@@ -1,0 +1,13 @@
+.button {
+  padding: 20px 40px;
+  background-color: var(--black);
+  border: var(--border);
+  text-align: center;
+  text-transform: uppercase;
+  appearance: none;
+  transition: background-color 300ms ease-in-out;
+
+  @include hover {
+    background-color: var(--red);
+  }
+}
