@@ -16,9 +16,9 @@ theme = "blackwater"
     weight = 1
 
   [[menu.main]]
-    identifier = "Operations"
-    name = "Operations"
-    url = "/operations/"
+    identifier = "Resources"
+    name = "Resources"
+    url = "/resources/"
     weight = 2
 
   [[menu.secondary]]
