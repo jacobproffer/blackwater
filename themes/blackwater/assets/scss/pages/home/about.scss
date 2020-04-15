@@ -1,6 +1,18 @@
 .home-about {
-  &__content {
-    max-width: 80ch;
-    margin: auto;
+  &__grid {
+    grid-gap: 40px 100px;
+    align-items: center;
+  }
+
+  &__content-left {
+    margin-left: var(--container-gutter);
+  }
+
+  &__content-right {
+    margin-right: var(--container-gutter);
+  }
+
+  &__image-right {
+    justify-self: end;
   }
 }

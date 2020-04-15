@@ -6,6 +6,7 @@
   --red: #ff0000;
   --border: solid 1px rgba(150, 150, 150, .5);
   --padding: 150px;
+  --nav-spacing: 80px;
 
   @include screen-below(1680px) {
     --container: 1280px;

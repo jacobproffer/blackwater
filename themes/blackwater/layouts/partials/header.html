@@ -6,8 +6,8 @@
     <div class="grid main-header__grid">
 
       {{ if .Site.Menus.main }}
-        <nav class="justify-start" aria-label="primary-navigation">
-          <ul class="grid main-header__nav unstyled-list">
+        <nav class="justify-start" aria-label="primary">
+          <ul class="main-header__nav main-header__nav--left unstyled-list">
 
             {{ $currentPage := . }}
 
@@ -32,11 +32,26 @@
         <img src="/images/blackwater-logo.svg" alt="Blackwater USA">
       </a>
 
-      <ul class="unstyled-list justify-end">
-        <li>
-          <a href="#">Test</a>
-        </li>
-      </ul>
+      <nav class="justify-end" aria-label="secondary">
+        <ul class="main-header__nav main-header__nav--right unstyled-list">
+
+          {{ $currentPage := . }}
+
+          {{ range .Site.Menus.secondary }}
+            <li class="main-header__nav-item">
+              <a
+                href="{{ .URL }}"
+                {{ if $currentPage.IsMenuCurrent "secondary" . }}
+                  aria-current="page"
+                {{ end }}
+              >
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+
+        </ul>
+      </nav>
 
     </div>
 
