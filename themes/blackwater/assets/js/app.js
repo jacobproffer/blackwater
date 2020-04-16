@@ -12,7 +12,7 @@ var headroom = new Headroom(mainHeader, {
     bottom: "onBottom",
     notTop: "scrolled"
   },
-  
+
   onUnpin: function() {
     if (mainHeader.classList.contains("open")) {
       mainHeader.classList.remove("unpinned");
@@ -22,7 +22,7 @@ var headroom = new Headroom(mainHeader, {
   onTop: function() {
     mainHeader.classList.remove("pinned");
   }
-  
+
 });
 
 headroom.init();
@@ -36,3 +36,7 @@ if (window.netlifyIdentity) {
     }
   });
 }
+
+var lazyLoadInstance = new LazyLoad({
+  elements_selector: ".lazy"
+});

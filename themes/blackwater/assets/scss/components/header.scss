@@ -43,8 +43,20 @@
   }
 
   &__nav {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--left {
+      li {
+        margin-right: var(--nav-spacing);
+      }
+    }
+
+    &--right {
+      li {
+        margin-left: var(--nav-spacing);
+      }
+    }
   }
 
   &__skip-link {

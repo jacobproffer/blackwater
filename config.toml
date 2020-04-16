@@ -3,6 +3,11 @@ languageCode = "en-us"
 title = "Blackwater"
 theme = "blackwater"
 
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
 [params]
   subTitle = "The Premier Source for All of Your Security Services"
   description = "This is a starter shell for Hugo."
@@ -10,13 +15,25 @@ theme = "blackwater"
 [menu]
 
   [[menu.main]]
-    identifier = "About"
-    name = "About"
-    url = "/about/"
+    identifier = "Team"
+    name = "Team"
+    url = "/team/"
     weight = 1
 
   [[menu.main]]
-    identifier = "Operations"
-    name = "Operations"
-    url = "/operations/"
+    identifier = "Resources"
+    name = "Resources"
+    url = "/resources/"
     weight = 2
+
+  [[menu.secondary]]
+    identifier = "News"
+    name = "News"
+    url = "/news/"
+    weight = 1
+
+  [[menu.secondary]]
+    identifier = "Media"
+    name = "Media"
+    url = "/media/"
+    weight = 3
