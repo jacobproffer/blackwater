@@ -3,6 +3,11 @@ languageCode = "en-us"
 title = "Blackwater"
 theme = "blackwater"
 
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
 [params]
   subTitle = "The Premier Source for All of Your Security Services"
   description = "This is a starter shell for Hugo."

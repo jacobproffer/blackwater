@@ -8,10 +8,33 @@
 
   <div class="container relative">
     <div class="home-operations__content">
+
       <small>04</small>
       <header>
         <h2>Upcoming Operations</h2>
       </header>
+
     </div>
+
+    <div class="grid grid--three-column border-top home-operations__column-headings">
+      <span class="home-operations__column-heading" aria-hidden="true">Map</span>
+      <span class="home-operations__column-heading" aria-hidden="true">Type</span>
+      <span class="home-operations__column-heading" aria-hidden="true">Date</span>
+    </div>
+
+    <ul class="unstyled-list home-operations__list">
+
+      {{ range .Site.Data.operations }}
+        <li class="home-operations__list-item">
+          <ul class="unstyled-list grid grid--three-column home-operations__operation-list">
+            <li>{{ .Map }}</li>
+            <li>{{ .Type }}</li>
+            <li>{{ .Date }}</li>
+          </ul>
+        </li>
+      {{ end }}
+
+    </ul>
+
   </div>
 </section>

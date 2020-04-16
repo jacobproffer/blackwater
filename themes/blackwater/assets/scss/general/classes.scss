@@ -31,6 +31,10 @@
   border-top: var(--border);
 }
 
+.border {
+  border: var(--border);
+}
+
 .relative {
   position: relative;
 }
@@ -70,4 +74,16 @@
     filter: grayscale(100%);
     object-fit: cover;
   }
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.play-button {
+  @include size(50px);
 }
