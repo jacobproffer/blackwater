@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://blackwater.proffer.dev"
 languageCode = "en-us"
 title = "Blackwater"
 theme = "blackwater"
