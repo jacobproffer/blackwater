@@ -1,9 +1,11 @@
 .button {
   padding: 20px 40px;
+  color: var(--white);
   background-color: var(--black);
   border: var(--border);
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
   appearance: none;
   transition: background-color 300ms ease-in-out;
 

@@ -9,8 +9,9 @@ theme = "blackwater"
   tag = "tags"
 
 [params]
-  subTitle = "The Premier Source for All of Your Security Services"
-  description = "This is a starter shell for Hugo."
+  subTitle = "The Premier Arma Unit for Your Security Services Needs"
+  description = "Blackwater is an Arma unit focused on security and offensive operations."
+  images = ["/images/blackwater-social.jpg"]
 
 [menu]
 

@@ -2,11 +2,13 @@
   {
     "Map": "G.O.S Dariyah",
     "Date": "2020-04-18",
-    "Type": "Day"
+    "Type": "Main",
+    "Description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quod debitis culpa facere esse incidunt nobis nam veniam dolor vel."
   },
   {
     "Map": "G.O.S Dariyah",
     "Date": "2020-04-22",
-    "Type": "Night"
+    "Type": "Casual",
+    "Description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quod debitis culpa facere esse incidunt nobis nam veniam dolor vel."
   }
 ]

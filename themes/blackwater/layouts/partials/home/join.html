@@ -6,11 +6,73 @@
 
   <div class="absolute grid-lines one-hundred"></div>
 
-  <div class="container relative">
-    <small>05</small>
-    <header>
-      <h2>Join Up</h2>
-    </header>
+  <div class="container relative grid grid--two-column two-col-gap">
+    <div>
+      <small>05</small>
+      <header>
+        <h2>Join Up</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quod debitis culpa facere esse incidunt nobis nam veniam dolor vel, possimus tenetur? Repellendus deserunt dolorem, reprehenderit laborum quae soluta aliquid.</p>
+      <h3 class="h4" id="positions">Open Positions</h3>
+      <ul class="grid unstyled-list" aria-labelledby="positions">
+        <li>Pilot</li>
+        <li>Counter Intelligence Officer</li>
+        <li>Security Contractor</li>
+        <li>Sniper</li>
+      </ul>
+    </div>
+    <form class="grid grid--two-column form" name="contact" action="/success/" netlify>
+
+      <label class="form__email border" for="email" class="form__author-email">
+        <span class="visually-hide">
+          Email
+        </span>
+        <input type="email" id="email" name="email" placeholder="Email" />
+      </label>
+
+      <label class="border" for="name">
+        <span class="visually-hide">
+          Name
+        </span>
+        <input type="text" id="name" name="name" placeholder="Name" required aria-required="true" />
+      </label>
+
+      <label class="border" for="age">
+        <span class="visually-hide">
+          Age
+        </span>
+        <input type="text" id="age" name="age" placeholder="Age" required aria-required="true" />
+      </label>
+
+      <label class="form__hours border" for="hours">
+        <span class="visually-hide">
+          Arma 3 Hours
+        </span>
+        <input type="text" id="hours" name="hours" placeholder="Total number of Arma 3 Hours" required aria-required="true" />
+      </label>
+
+      <div class="form__select border">
+        <label for="tag-select" class="visually-hide">Choose a Position</label>
+        <i></i>
+        <select id="tag-select" name="tag-select" required aria-required="true">
+          <option value="">Select Desired Position</option>
+
+          <option value="Pilot">Pilot</option>
+          <option value="Counter Intelligence Officer">Counter Intelligence Officer</option>
+          <option value="Security Contractor">Security Contractor</option>
+          <option value="Sniper">Sniper</option>
+
+        </select>
+      </div>
+
+      <label class="form__message border" for="article">
+        <span class="visually-hide">
+          Tell us about yourself
+        </span>
+        <textarea name="message" id="article" cols="30" rows="10" placeholder="Tell us about yourself." required aria-required="true"></textarea>
+      </label>
+      <button class="button" type="submit">Submit Request</button>
+    </form>
   </div>
 
 </section>

@@ -3,37 +3,6 @@
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   }
 
-  &__play-button {
-    top: 0;
-    left: 0;
-  }
-
-  &__play-button-content {
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-
-    small {
-      text-align: left;
-    }
-
-    h3 {
-      margin-bottom: 0;
-    }
-
-    p {
-      margin: 0 0 20px;
-      text-transform: uppercase;
-    }
-  }
-
-  &__overlay {
-    top: 0;
-    left: 0;
-    background: radial-gradient(circle, transparent, var(--black) 100%);
-  }
-
   &__big-square-image-1 {
     grid-column: 3 / span 2;
     grid-row: 1 / span 2;
