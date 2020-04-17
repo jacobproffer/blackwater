@@ -16,21 +16,19 @@
 
     </div>
 
-    <div class="grid grid--three-column border-top home-operations__column-headings">
-      <span class="home-operations__column-heading" aria-hidden="true">Map</span>
-      <span class="home-operations__column-heading" aria-hidden="true">Type</span>
-      <span class="home-operations__column-heading" aria-hidden="true">Date</span>
-    </div>
+    <ul class="unstyled-list grid grid--three-column home-operations__grid">
 
-    <ul class="unstyled-list home-operations__list">
-
-      {{ range .Site.Data.operations }}
-        <li class="home-operations__list-item">
-          <ul class="unstyled-list grid grid--three-column home-operations__operation-list">
-            <li>{{ .Map }}</li>
-            <li>{{ .Type }}</li>
-            <li>{{ .Date }}</li>
-          </ul>
+      {{ range sort .Site.Data.operations "Date" "desc" }}
+        <li class="home-operations__operation">
+          <article>
+            <img class="lazy" data-src="https://source.unsplash.com/467x266?military" alt="">
+            <div class="home-operations__operation-body border">
+              <time datetime="{{ .Date }}">
+                {{ dateFormat "Monday" .Date }}
+              </time>
+              <span>{{ .Type }}</span>
+            </div>
+          </article>
         </li>
       {{ end }}
 
