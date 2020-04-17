@@ -1,0 +1,64 @@
+.form {
+  grid-gap: 20px;
+  max-width: 80ch;
+  margin: 20px auto auto;
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 20px 25px;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 300;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    &::placeholder {
+      color: var(--white);
+      opacity: 1;
+    }
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 1rem;
+  }
+
+  select {
+    padding: 20px;
+  }
+
+  label {
+    display: block;
+  }
+
+  &__email,
+  &__select,
+  &__hours,
+  &__message {
+    grid-column: span 2;
+  }
+
+  &__select {
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 26px;
+      right: 25px;
+      padding: 3px;
+      border: solid var(--red);
+      border-width: 0 3px 3px 0;
+      pointer-events: none;
+      transform: rotate(45deg);
+    }
+  }
+}

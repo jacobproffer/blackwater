@@ -91,3 +91,7 @@
 .play-button {
   @include size(50px);
 }
+
+.two-col-gap {
+  grid-gap: var(--two-col-gap);
+}
