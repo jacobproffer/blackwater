@@ -11,6 +11,7 @@ theme = "blackwater"
 [params]
   subTitle = "The Premier Arma Unit for Your Security Services Needs"
   description = "Blackwater is an Arma unit focused on security and offensive operations."
+  images = ["/images/blackwater-social.jpg"]
 
 [menu]
 
