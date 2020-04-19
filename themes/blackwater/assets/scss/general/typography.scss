@@ -9,6 +9,11 @@ h4,
   text-transform: uppercase;
 }
 
+h1,
+h2 {
+  color: var(--red);
+}
+
 h1 {
   @include font-size($h1-font-sizes);
   letter-spacing: .1rem;
