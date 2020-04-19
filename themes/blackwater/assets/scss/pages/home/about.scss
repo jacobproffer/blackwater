@@ -2,17 +2,54 @@
   &__grid {
     grid-gap: 0 100px;
     align-items: center;
+
+    @include screen-below($desktopSm) {
+      grid-gap: 0 75px;
+    }
+
+    @include screen-below($laptopSm) {
+      grid-gap: 50px;
+    }
   }
 
   &__content-left {
-    margin-left: var(--container-gutter);
+    @include screen-above($tablet) {
+      margin-left: var(--container-gutter);
+    }
+
+    @include screen-below($tablet) {
+      order: 3;
+    }
   }
 
   &__content-right {
-    margin-right: var(--container-gutter);
+    @include screen-above($tablet) {
+      margin-right: var(--container-gutter);
+    }
+
+    @include screen-below($tablet) {
+      order: 1;
+    }
+  }
+
+  &__content-left,
+  &__content-right {
+    @include screen-below($tablet) {
+      margin: 0 var(--container-gutter);
+    }
+  }
+
+  &__image-left {
+    @include screen-below($tablet) {
+      order: 2;
+    }
   }
 
   &__image-right {
     justify-self: end;
+
+    @include screen-below($tablet) {
+      order: 4;
+    }
   }
 }

@@ -6,19 +6,10 @@
   &__big-square-image-1 {
     grid-column: 3 / span 2;
     grid-row: 1 / span 2;
-
-    @include screen-below(1680px) {
-      grid-column: 2 / span 2;
-    }
   }
 
   &__big-image-1 {
     grid-column: 5 / -1;
     grid-row: 1 / span 2;
-  }
-
-  &__big-image-2 {
-    grid-column: 1 / span 4;
-    grid-row: 3 / span 1;
   }
 }

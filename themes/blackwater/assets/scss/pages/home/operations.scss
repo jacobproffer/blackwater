@@ -1,6 +1,6 @@
 .home-operations {
   &__content {
-    max-width: 80ch;
+    max-width: var(--content);
     margin: auto;
   }
 
@@ -36,7 +36,5 @@
   &__operation-body {
     padding: 40px;
     background-color: var(--black);
-    border-right: var(--border);
-    border-left: var(--border);
   }
 }
