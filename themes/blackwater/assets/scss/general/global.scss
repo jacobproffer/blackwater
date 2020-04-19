@@ -17,11 +17,13 @@
   @include screen-below($desktopSm) {
     --container: 1080px;
     --padding: 100px;
+    --nav-spacing: 60px;
   }
 
   @include screen-below($laptopSm) {
     --container: 900px;
     --padding: 75px;
+    --nav-spacing: 40px;
   }
 
   @include screen-below($tablet) {
@@ -35,6 +37,7 @@
 
   @include screen-below($mobile) {
     --container: 480px;
+    --padding: 50px;
   }
 
   @include screen-below($mobile-sm) {

@@ -1,4 +1,8 @@
 .home-about {
+  p {
+    margin-bottom: 0;
+  }
+
   &__grid {
     grid-gap: 0 100px;
     align-items: center;
