@@ -38,6 +38,7 @@
   @include screen-below($mobile) {
     --container: 480px;
     --padding: 50px;
+    --nav-spacing: 20px;
   }
 
   @include screen-below($mobile-sm) {

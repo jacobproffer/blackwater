@@ -3,13 +3,19 @@
 
   &--two-column {
     grid-template-columns: repeat(2, 1fr);
-
-    @include screen-below($tablet) {
-      grid-template-columns: 1fr;
-    }
   }
 
   &--three-column {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--footer {
+    grid-template-columns: 50px 1fr;
+  }
+
+  &--collapse-tablet {
+    @include screen-below($tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 }

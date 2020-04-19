@@ -9,9 +9,6 @@
   will-change: transform;
 
   a {
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-
     &[aria-current="page"] {
       text-decoration: underline;
     }
@@ -43,10 +40,6 @@
 
     img {
       @include size(auto, 50px);
-    }
-
-    @include screen-below($tablet) {
-      order: 1;
     }
   }
 
@@ -138,6 +131,7 @@
 
   &--nav-open {
     background-color: var(--black);
+    border-bottom: var(--border);
     transform: translateY(0);
   }
 }

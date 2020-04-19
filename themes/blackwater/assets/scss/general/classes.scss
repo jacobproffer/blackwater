@@ -91,3 +91,14 @@
 .two-col-gap {
   grid-gap: var(--two-col-gap);
 }
+
+.collapse-tablet {
+  @include screen-below($tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nav-item {
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}

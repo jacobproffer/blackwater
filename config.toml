@@ -39,6 +39,24 @@ theme = "blackwater"
     url = "/media/"
     weight = 3
 
+  [[menu.social]]
+    identifier = "Twitter"
+    name = "Twitter"
+    url = "/twitter/"
+    weight = 1
+
+  [[menu.social]]
+    identifier = "YouTube"
+    name = "YouTube"
+    url = "/youtube/"
+    weight = 2
+
+  [[menu.social]]
+    identifier = "Discord"
+    name = "Discord"
+    url = "/discord/"
+    weight = 3
+
   [[menu.mobile]]
     identifier = "Team"
     name = "Team"

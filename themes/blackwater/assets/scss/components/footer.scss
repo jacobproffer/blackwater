@@ -1,4 +1,34 @@
 .main-footer {
   padding: 50px 0;
   background-color: var(--black);
+
+  &__grid {
+    grid-gap: 40px;
+    align-items: center;
+
+    @include screen-below($tablet) {
+      justify-items: center;
+    }
+  }
+
+  &__nav {
+    @include screen-above($tablet) {
+      justify-self: end;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__nav-item {
+    &:not(:last-of-type) {
+      margin-right: var(--nav-spacing);
+    }
+  }
+
+  &__paw {
+    @include size(50px, 51px);
+  }
 }
