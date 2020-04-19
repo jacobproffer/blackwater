@@ -1,7 +1,19 @@
 .home-operations {
   &__content {
-    max-width: var(--content);
+    max-width: 100ch;
     margin: auto;
+
+    @include screen-below($desktopSm) {
+      max-width: 80ch;
+    }
+
+    @include screen-below($laptopSm) {
+      max-width: 60ch;
+    }
+
+    @include screen-below($tablet) {
+      max-width: unset;
+    }
   }
 
   &__grid {

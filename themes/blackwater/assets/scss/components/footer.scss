@@ -18,13 +18,18 @@
   }
 
   &__nav-list {
-    display: flex;
-    flex-wrap: wrap;
+    @include screen-below($tablet) {
+      display: grid;
+      grid-gap: 20px;
+      text-align: center;
+    }
   }
 
   &__nav-item {
-    &:not(:last-of-type) {
-      margin-right: var(--nav-spacing);
+    @include screen-above($tablet) {
+      &:not(:last-of-type) {
+        margin-right: var(--nav-spacing);
+      }
     }
   }
 

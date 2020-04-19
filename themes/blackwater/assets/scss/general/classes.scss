@@ -101,4 +101,15 @@
 .nav-item {
   letter-spacing: .2rem;
   text-transform: uppercase;
+
+  @include hover {
+    color: var(--red);
+  }
+}
+
+.flex {
+  @include screen-above($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

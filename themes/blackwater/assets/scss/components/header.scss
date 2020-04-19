@@ -10,7 +10,7 @@
 
   a {
     &[aria-current="page"] {
-      text-decoration: underline;
+      color: var(--red);
     }
   }
 
@@ -56,9 +56,6 @@
   }
 
   &__nav-list {
-    display: flex;
-    flex-wrap: wrap;
-
     &--left {
       li {
         @include screen-above($tablet) {
@@ -96,8 +93,10 @@
     overflow: hidden;
     text-align: center;
 
-    ul {
-      grid-gap: 20px;
+    li {
+      &:not(:last-of-type) {
+        border-bottom: var(--border);
+      }
     }
 
     a {

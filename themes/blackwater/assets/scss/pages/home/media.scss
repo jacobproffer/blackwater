@@ -1,15 +1,43 @@
 .home-media {
   &__grid {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+    @include screen-below($mobile-sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__big-square-image-1 {
     grid-column: 3 / span 2;
     grid-row: 1 / span 2;
+
+    @include screen-below($laptopSm) {
+      grid-column: 3 / span 3;
+      grid-row: 4 / -1;
+    }
+
+    @include screen-below($portrait) {
+      grid-column: 2 / -1;
+    }
+
+    @include screen-below($mobile) {
+      grid-column: 1 / -1;
+      grid-row: unset;
+    }
   }
 
   &__big-image-1 {
     grid-column: 5 / -1;
     grid-row: 1 / span 2;
+
+    @include screen-below($laptopSm) {
+      grid-column: 3 / -1;
+      grid-row: 2 / -1;
+    }
+
+    @include screen-below($portrait) {
+      grid-column: 1 / -1;
+      grid-row: 3 / -1;
+    }
   }
 }

@@ -7,7 +7,7 @@
 
       {{ if .Site.Menus.main }}
         <nav class="main-header__nav justify-start" aria-label="primary">
-          <ul class="main-header__nav-list main-header__nav-list--left unstyled-list">
+          <ul class="main-header__nav-list main-header__nav-list--left unstyled-list flex">
 
             {{ $currentPage := . }}
 
@@ -34,7 +34,7 @@
       </a>
 
       <nav class="main-header__nav main-header__nav--right" aria-label="secondary">
-        <ul class="main-header__nav-list main-header__nav-list--right unstyled-list">
+        <ul class="main-header__nav-list main-header__nav-list--right unstyled-list flex">
 
           {{ $currentPage := . }}
 

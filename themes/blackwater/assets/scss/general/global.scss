@@ -1,7 +1,7 @@
 :root {
   --container: 1440px;
   --container-gutter: calc((100vw - var(--container)) / 2);
-  --content: 80ch;
+  --content: 100ch;
   --black: #181818;
   --white: #f5f5f5;
   --red: #ff0000;
@@ -12,6 +12,7 @@
 
   @include screen-below($desktop) {
     --container: 1280px;
+    --content: 80ch;
   }
 
   @include screen-below($desktopSm) {
