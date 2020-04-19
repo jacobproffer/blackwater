@@ -1,5 +1,7 @@
 var mainHeader = document.querySelector(".main-header");
 var headerHeight = mainHeader.offsetHeight;
+var mobileNavButton = document.querySelector(".main-header__mobile-nav-button");
+var mobileNavigation = document.querySelector(".main-header__mobile-nav");
 
 var headroom = new Headroom(mainHeader, {
 
@@ -14,7 +16,7 @@ var headroom = new Headroom(mainHeader, {
   },
 
   onUnpin: function() {
-    if (mainHeader.classList.contains("open")) {
+    if (mainHeader.classList.contains("main-header--nav-open")) {
       mainHeader.classList.remove("unpinned");
     }
   },
@@ -22,20 +24,15 @@ var headroom = new Headroom(mainHeader, {
   onTop: function() {
     mainHeader.classList.remove("pinned");
   }
-
 });
 
 headroom.init();
 
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", user => {
-    if (!user) {
-      window.netlifyIdentity.on("login", () => {
-        document.location.href = "/admin/";
-      });
-    }
-  });
-}
+mobileNavButton.addEventListener("click", function() {
+  mainHeader.classList.toggle("main-header--nav-open");
+  mobileNavigation.classList.toggle("main-header__mobile-nav--open")
+  this.classList.toggle("nav-open");
+});
 
 var lazyLoadInstance = new LazyLoad({
   elements_selector: ".lazy"

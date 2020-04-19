@@ -32,6 +32,10 @@
     grid-template-columns: 1fr 83px 1fr;
     justify-content: space-between;
     align-items: center;
+
+    @include screen-below($tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__logo {
@@ -40,28 +44,86 @@
     img {
       @include size(auto, 50px);
     }
+
+    @include screen-below($tablet) {
+      order: 1;
+    }
   }
 
   &__nav {
+    &--right {
+      @include screen-above($tablet) {
+        justify-self: end;
+      }
+    }
+
+    @include screen-below($tablet) {
+      display: none;
+    }
+  }
+
+  &__nav-list {
     display: flex;
     flex-wrap: wrap;
 
     &--left {
       li {
-        margin-right: var(--nav-spacing);
+        @include screen-above($tablet) {
+          margin-right: var(--nav-spacing);
+        }
       }
     }
 
     &--right {
       li {
-        margin-left: var(--nav-spacing);
+        @include screen-above($tablet) {
+          margin-left: var(--nav-spacing);
+        }
       }
+    }
+
+    @include screen-below($tablet) {
+      display: none;
+    }
+  }
+
+  &__mobile-nav-button {
+    justify-self: end;
+    order: 2;
+
+    @include screen-above($tablet) {
+      display: none;
+    }
+  }
+
+  &__mobile-nav {
+    grid-column: 1 / -1;
+    order: 3;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+
+    ul {
+      grid-gap: 20px;
+    }
+
+    a {
+      display: block;
+      padding: 20px;
+    }
+
+    &--open {
+      height: auto;
+    }
+
+    @include screen-above($tablet) {
+      display: none;
     }
   }
 
   &__skip-link {
     position: fixed;
-    top: -4em;
+    top: -10em;
     left: 50%;
     padding: 20px;
     background-color: var(--black);
@@ -72,5 +134,10 @@
     &:focus {
       top: 0;
     }
+  }
+
+  &--nav-open {
+    background-color: var(--black);
+    transform: translateY(0);
   }
 }

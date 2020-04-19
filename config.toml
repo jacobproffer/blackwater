@@ -38,3 +38,28 @@ theme = "blackwater"
     name = "Media"
     url = "/media/"
     weight = 3
+
+  [[menu.mobile]]
+    identifier = "Team"
+    name = "Team"
+    url = "/team/"
+    weight = 1
+
+  [[menu.mobile]]
+    identifier = "Resources"
+    name = "Resources"
+    url = "/resources/"
+    weight = 2
+
+  [[menu.mobile]]
+    identifier = "News"
+    name = "News"
+    url = "/news/"
+    weight = 3
+
+  [[menu.mobile]]
+    identifier = "Media"
+    name = "Media"
+    url = "/media/"
+    weight = 4
+
