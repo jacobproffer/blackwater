@@ -23,10 +23,10 @@
           <article>
             <img class="lazy" data-src="https://source.unsplash.com/1200x800?military" alt="">
             <div class="home-operations__operation-body border">
+              <small>7:30pm CST/US</small>
               <time class="h3" datetime="{{ .Date }}">
                 {{ dateFormat "Monday" .Date }}
               </time>
-              <span class="home-operations__time">7:30pm CST/US</span>
               <p>{{ .Description }}</p>
               <span class="home-operations__tag">{{ .Type }} Operation</span>
             </div>
