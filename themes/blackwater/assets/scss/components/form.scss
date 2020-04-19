@@ -1,6 +1,6 @@
 .form {
   grid-gap: 20px;
-  max-width: 80ch;
+  max-width: var(--content);
   margin: 20px auto auto;
 
   input,
@@ -60,5 +60,9 @@
       pointer-events: none;
       transform: rotate(45deg);
     }
+  }
+
+  @include screen-below($tablet) {
+    width: 100%;
   }
 }

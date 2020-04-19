@@ -10,4 +10,12 @@
     display: inline-block;
     margin-top: 40px;
   }
+
+  @include screen-below($desktopSm) {
+    padding: 214px 0 150px;
+  }
+
+  @include screen-below($laptopSm) {
+    padding: 144px 0 100px;
+  }
 }

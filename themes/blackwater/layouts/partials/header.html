@@ -1,19 +1,20 @@
 <header class="main-header">
   <div class="container">
 
-    <a class="main-header__skip-link" href="#content">Skip to Main Content</a>
+    <a class="main-header__skip-link nav-item" href="#content">Skip to Main Content</a>
 
     <div class="grid main-header__grid">
 
       {{ if .Site.Menus.main }}
-        <nav class="justify-start" aria-label="primary">
-          <ul class="main-header__nav main-header__nav--left unstyled-list">
+        <nav class="main-header__nav justify-start" aria-label="primary">
+          <ul class="main-header__nav-list main-header__nav-list--left unstyled-list flex">
 
             {{ $currentPage := . }}
 
             {{ range .Site.Menus.main }}
               <li class="main-header__nav-item">
                 <a
+                  class="nav-item"
                   href="{{ .URL }}"
                   {{ if $currentPage.IsMenuCurrent "main" . }}
                     aria-current="page"
@@ -32,16 +33,41 @@
         <img src="/images/blackwater-logo.svg" alt="Blackwater USA">
       </a>
 
-      <nav class="justify-end" aria-label="secondary">
-        <ul class="main-header__nav main-header__nav--right unstyled-list">
+      <nav class="main-header__nav main-header__nav--right" aria-label="secondary">
+        <ul class="main-header__nav-list main-header__nav-list--right unstyled-list flex">
 
           {{ $currentPage := . }}
 
           {{ range .Site.Menus.secondary }}
             <li class="main-header__nav-item">
               <a
+                class="nav-item"
                 href="{{ .URL }}"
                 {{ if $currentPage.IsMenuCurrent "secondary" . }}
+                  aria-current="page"
+                {{ end }}
+              >
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+
+        </ul>
+      </nav>
+
+      <button class="button main-header__mobile-nav-button">Menu</button>
+
+      <nav class="main-header__mobile-nav">
+        <ul class="grid unstyled-list">
+
+          {{ $currentPage := . }}
+
+          {{ range .Site.Menus.mobile }}
+            <li>
+              <a
+                class="nav-item"
+                href="{{ .URL }}"
+                {{ if $currentPage.IsMenuCurrent "mobile" . }}
                   aria-current="page"
                 {{ end }}
               >

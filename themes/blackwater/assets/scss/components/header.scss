@@ -9,11 +9,8 @@
   will-change: transform;
 
   a {
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-
     &[aria-current="page"] {
-      text-decoration: underline;
+      color: var(--red);
     }
   }
 
@@ -32,6 +29,10 @@
     grid-template-columns: 1fr 83px 1fr;
     justify-content: space-between;
     align-items: center;
+
+    @include screen-below($tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__logo {
@@ -43,31 +44,93 @@
   }
 
   &__nav {
-    display: flex;
-    flex-wrap: wrap;
+    &--right {
+      @include screen-above($tablet) {
+        justify-self: end;
+      }
+    }
 
+    @include screen-below($tablet) {
+      display: none;
+    }
+  }
+
+  &__nav-list {
     &--left {
       li {
-        margin-right: var(--nav-spacing);
+        @include screen-above($tablet) {
+          margin-right: var(--nav-spacing);
+        }
       }
     }
 
     &--right {
       li {
-        margin-left: var(--nav-spacing);
+        @include screen-above($tablet) {
+          margin-left: var(--nav-spacing);
+        }
       }
+    }
+
+    @include screen-below($tablet) {
+      display: none;
+    }
+  }
+
+  &__mobile-nav-button {
+    justify-self: end;
+    order: 2;
+
+    @include screen-above($tablet) {
+      display: none;
+    }
+  }
+
+  &__mobile-nav {
+    grid-column: 1 / -1;
+    order: 3;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+
+    li {
+      &:not(:last-of-type) {
+        border-bottom: var(--border);
+      }
+    }
+
+    a {
+      display: block;
+      padding: 20px;
+    }
+
+    &--open {
+      height: auto;
+    }
+
+    @include screen-above($tablet) {
+      display: none;
     }
   }
 
   &__skip-link {
     position: fixed;
-    top: -2.5em;
+    top: -10em;
     left: 50%;
+    padding: 20px;
+    background-color: var(--black);
+    border: var(--border);
     transform: translateX(-50%);
     transition: top 300ms ease-in-out;
 
     &:focus {
       top: 0;
     }
+  }
+
+  &--nav-open {
+    background-color: var(--black);
+    border-bottom: var(--border);
+    transform: translateY(0);
   }
 }
