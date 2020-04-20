@@ -2,7 +2,7 @@
   &__grid {
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 
-    @include screen-below($mobile-sm) {
+    @include screen-below($portrait) {
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -17,10 +17,6 @@
     }
 
     @include screen-below($portrait) {
-      grid-column: 2 / -1;
-    }
-
-    @include screen-below($mobile) {
       grid-column: 1 / -1;
       grid-row: unset;
     }
@@ -37,7 +33,7 @@
 
     @include screen-below($portrait) {
       grid-column: 1 / -1;
-      grid-row: 3 / -1;
+      grid-row: unset;
     }
   }
 }

@@ -1,7 +1,7 @@
 <section class="home-operations relative section-padding border-top">
 
   <div class="absolute image one-hundred">
-    <img class="one-hundred lazy" data-src="https://source.unsplash.com/1280x720?military" alt="">
+    <img class="one-hundred" data-src="https://source.unsplash.com/1280x720?military" alt="">
   </div>
 
   <div class="absolute grid-lines one-hundred"></div>
@@ -21,7 +21,7 @@
       {{ range sort .Site.Data.operations "Date" "desc" }}
         <li class="home-operations__operation">
           <article>
-            <img class="lazy" data-src="https://source.unsplash.com/1200x800?military" alt="">
+            <img data-src="https://source.unsplash.com/1200x800?military" alt="">
             <div class="home-operations__operation-body border">
               <small>7:30pm CST/US</small>
               <time class="h3" datetime="{{ .Date }}">

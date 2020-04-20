@@ -22,9 +22,9 @@ theme = "blackwater"
     weight = 1
 
   [[menu.main]]
-    identifier = "Resources"
-    name = "Resources"
-    url = "/resources/"
+    identifier = "Intel"
+    name = "Intel"
+    url = "/intel/"
     weight = 2
 
   [[menu.secondary]]
@@ -64,9 +64,9 @@ theme = "blackwater"
     weight = 1
 
   [[menu.mobile]]
-    identifier = "Resources"
-    name = "Resources"
-    url = "/resources/"
+    identifier = "Intel"
+    name = "Intel"
+    url = "/intel/"
     weight = 2
 
   [[menu.mobile]]
