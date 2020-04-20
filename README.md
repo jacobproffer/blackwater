@@ -1,5 +1,7 @@
 # Blackwater
 
+![Blackwater](https://raw.githubusercontent.com/jacobproffer/blackwater/master/static/images/blackwater-social.jpg)
+
 ## Run server
 
 To run the Hugo server with drafts hidden, run `hugo server`. To see drafted content, run `hugo server -D`.
