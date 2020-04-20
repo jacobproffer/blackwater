@@ -85,6 +85,5 @@ if (mediaGrid) {
     triggerElement: mediaGrid,
     triggerHook: 0.4,
     duration: 0,
-    offset: 50,
   }).setTween(imageTL).addTo(controller);
 }
