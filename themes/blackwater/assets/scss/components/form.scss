@@ -1,7 +1,6 @@
 .form {
   grid-gap: 20px;
-  max-width: var(--content);
-  margin: 20px auto auto;
+  justify-self: end;
 
   input,
   textarea,
@@ -44,7 +43,13 @@
   &__select,
   &__hours,
   &__message {
-    grid-column: span 2;
+    @include screen-above($tablet) {
+      grid-column: span 2;
+    }
+  }
+
+  &__submit {
+    justify-self: start;
   }
 
   &__select {
@@ -63,6 +68,7 @@
   }
 
   @include screen-below($tablet) {
+    grid-template-columns: 1fr;
     width: 100%;
   }
 }
