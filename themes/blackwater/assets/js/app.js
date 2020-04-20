@@ -1,5 +1,6 @@
 var mainHeader = document.querySelector(".main-header");
 var headerHeight = mainHeader.offsetHeight;
+var logo = document.querySelector(".main-header__logo img");
 var mobileNavButton = document.querySelector(".main-header__mobile-nav-button");
 var mobileNavigation = document.querySelector(".main-header__mobile-nav");
 var aboutGrid = document.querySelector(".home-about__grid");
@@ -37,6 +38,8 @@ mobileNavButton.addEventListener("click", function() {
 });
 
 var controller = new ScrollMagic.Controller();
+
+gsap.from(logo, {duration: 0.75, opacity: 0, y: -200});
 
 if (lazyImg) {
   lazyImg.forEach(function (el) {
