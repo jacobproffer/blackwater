@@ -58,7 +58,7 @@ if (lazyImg) {
           el.setAttribute('srcset', el.getAttribute('data-srcset'))
         }
       })
-      .addTo(controller)
+      .addTo(controller);
   });
 }
 
