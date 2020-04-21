@@ -27,7 +27,7 @@
     </div>
     <form class="grid grid--two-column form" name="contact" action="/success/" netlify>
 
-      <label class="form__email border" for="email" class="form__author-email">
+      <label class="form__email border" for="email">
         <span class="visually-hide">
           Email
         </span>
@@ -38,27 +38,27 @@
         <span class="visually-hide">
           Name
         </span>
-        <input type="text" id="name" name="name" placeholder="Name" required aria-required="true" />
+        <input type="text" id="name" name="name" placeholder="Name" required />
       </label>
 
       <label class="border" for="age">
         <span class="visually-hide">
           Age
         </span>
-        <input type="text" id="age" name="age" placeholder="Age" required aria-required="true" />
+        <input type="text" id="age" name="age" placeholder="Age" required />
       </label>
 
       <label class="form__hours border" for="hours">
         <span class="visually-hide">
           Arma 3 Hours
         </span>
-        <input type="text" id="hours" name="hours" placeholder="Total Number of Arma 3 Hours" required aria-required="true" />
+        <input type="text" id="hours" name="hours" placeholder="Total Number of Arma 3 Hours" required />
       </label>
 
       <div class="form__select border">
         <label for="tag-select" class="visually-hide">Choose a Position</label>
         <i></i>
-        <select id="tag-select" name="tag-select" required aria-required="true">
+        <select id="tag-select" name="tag-select" required>
           <option value="">Select Desired Position</option>
 
           <option value="Aviation">Aviation</option>
@@ -77,7 +77,7 @@
         <span class="visually-hide">
           Tell us about yourself
         </span>
-        <textarea name="message" id="article" cols="30" rows="10" placeholder="Tell us about yourself." required aria-required="true"></textarea>
+        <textarea name="message" id="article" cols="30" rows="10" placeholder="Tell us about yourself." required></textarea>
       </label>
       <button class="form__submit button border" type="submit">Submit Request</button>
     </form>
