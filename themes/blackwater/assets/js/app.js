@@ -79,7 +79,7 @@ if (aboutGrid) {
 if (mediaGrid) {
   var imageTL = gsap.timeline();
 
-  imageTL.from(".animate-image", {duration: 0.5, opacity: 0, stagger: 0.25});
+  imageTL.from(".animate-image", {duration: 0.5, opacity: 0});
 
   var imageTrigger = new ScrollMagic.Scene({
     triggerElement: mediaGrid,
