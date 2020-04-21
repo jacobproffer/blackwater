@@ -11,24 +11,22 @@
 
       <small>04</small>
       <header>
-        <h2>Upcoming Operations</h2>
+        <h2 id="operations">Upcoming Operations</h2>
       </header>
 
     </div>
 
-    <ul class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap home-operations__grid">
+    <ul class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap home-operations__grid" aria-labelledby="operations">
 
       {{ range sort .Site.Data.operations "Date" "desc" }}
-        <li class="home-operations__operation">
-          <article>
+        <li>
+          <article class="card">
             <img data-src="https://source.unsplash.com/1200x800?military" alt="">
-            <div class="home-operations__operation-body border">
+            <div class="card__body border">
               <small>7:30pm CST/US</small>
-              <time class="h3" datetime="{{ .Date }}">
-                {{ dateFormat "Monday" .Date }}
-              </time>
+              <h3>{{ dateFormat "Monday" .Date }}</h3>
               <p>{{ .Description }}</p>
-              <span class="home-operations__tag">{{ .Type }} Operation</span>
+              <span class="card__tag">{{ .Type }} Operation</span>
             </div>
           </article>
         </li>

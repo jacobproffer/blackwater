@@ -14,6 +14,14 @@
   justify-self: end;
 }
 
+.center {
+  text-align: center;
+}
+
+.hero-spacing {
+  padding: var(--hero-spacing) 0 var(--padding);
+}
+
 .unstyled-list {
   padding: 0;
   margin: 0;
@@ -116,4 +124,35 @@
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.card {
+  a,
+  time,
+  img {
+    display: block;
+  }
+
+  &__body {
+    padding: 40px;
+    background-color: var(--black);
+  }
+
+  &__time,
+  &__tag {
+    text-transform: uppercase;
+  }
+
+  &__time {
+    display: block;
+    margin-top: 10px;
+  }
+
+  &__tag {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-top: 20px;
+    background-color: var(--red);
+    border-radius: 4px;
+  }
 }

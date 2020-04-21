@@ -1,12 +1,55 @@
 {{ define "main" }}
-  <section class="section-padding">
-    <div class="container">
-      <small>01</small>
-      <header>
-        <h1>
-          {{ .Title }}
-        </h1>
-      </header>
+  <section class="relative hero-spacing news">
+
+    <div class="absolute image one-hundred">
+      <img class="one-hundred" data-src="https://source.unsplash.com/1280x720?military" alt="">
+    </div>
+
+    <div class="absolute grid-lines one-hundred"></div>
+
+    <div class="container relative">
+
+      <div class="center">
+        <small>Community &amp; Server Updates</small>
+        <header>
+          <h1>
+            {{ .Title }}
+          </h1>
+        </header>
+      </div>
+
+      <ul class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap news__list" aria-labelledby="operations">
+
+        {{ range sort .Pages }}
+          <li>
+            <article class="card">
+              <a href="{{ .Permalink }}">
+                <img data-src="https://source.unsplash.com/1200x800?military" alt="">
+                <div class="card__body border">
+                  <small>
+                    <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+                      {{ .PublishDate.Format "January 2, 2006" }}
+                    </time>
+                  </small>
+                  <h2 class="h3">{{ .Title }}</h2>
+                  <p>{{ .Description }}</p>
+
+                  {{ if (.GetTerms "tags") }}
+                    <ul class="unstyled-list">
+                      {{ range (.GetTerms "tags") }}
+                        <li class="card__tag">{{ .LinkTitle }}</li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+
+                </div>
+              </a>
+            </article>
+          </li>
+        {{ end }}
+
+      </ul>
+
     </div>
   </section>
 {{ end }}
