@@ -1,0 +1,9 @@
+.news {
+  h2 {
+    line-height: initial;
+  }
+
+  &__list {
+    margin-top: var(--header-spacing);
+  }
+}

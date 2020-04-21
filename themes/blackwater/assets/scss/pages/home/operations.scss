@@ -19,34 +19,4 @@
   &__grid {
     margin-top: 40px;
   }
-
-  &__operation {
-    time,
-    img {
-      display: block;
-    }
-  }
-
-  &__time,
-  &__tag {
-    text-transform: uppercase;
-  }
-
-  &__time {
-    display: block;
-    margin-top: 10px;
-  }
-
-  &__tag {
-    display: inline-block;
-    padding: 4px 8px;
-    margin-top: 20px;
-    background-color: var(--red);
-    border-radius: 4px;
-  }
-
-  &__operation-body {
-    padding: 40px;
-    background-color: var(--black);
-  }
 }

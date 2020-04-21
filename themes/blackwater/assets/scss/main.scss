@@ -1,7 +1,6 @@
 @import "helpers/variables";
 @import "helpers/maps";
 @import "helpers/mixins";
-@import "general/reset";
 @import "general/typography";
 @import "general/global";
 @import "general/classes";
@@ -12,8 +11,11 @@
 @import "components/footer";
 @import "components/button";
 @import "components/form";
+@import "components/single";
+@import "components/pagination";
 @import "pages/home/hero";
 @import "pages/home/about";
 @import "pages/home/operations";
 @import "pages/home/media";
 @import "pages/home/join";
+@import "pages/news/list";

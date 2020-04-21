@@ -1,0 +1,66 @@
+{{ define "main" }}
+  <section class="relative hero-spacing news">
+
+    <div class="absolute image one-hundred">
+      <img class="one-hundred" data-src="/images/altis.jpg" alt="">
+    </div>
+
+    <div class="absolute grid-lines one-hundred"></div>
+
+    <div class="container relative">
+
+      <div class="center">
+        <small>Community &amp; Server Updates</small>
+        <header>
+          <h1 id="news">
+            {{ .Title }}
+          </h1>
+        </header>
+      </div>
+
+      <ul class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap news__list" aria-labelledby="news">
+
+        {{ range sort .Pages }}
+          <li>
+            <article class="card">
+              <a href="{{ .Permalink }}">
+
+                {{ if isset .Params "thumbnail" }}
+                  <img data-src="{{ .Params.thumbnail }}" alt="">
+                {{ end }}
+
+                <div class="card__body border">
+
+                  {{ if .PublishDate }}
+                    <small>
+                      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+                        {{ .PublishDate.Format "January 2, 2006" }}
+                      </time>
+                    </small>
+                  {{ end }}
+
+                  <h2 class="h3">{{ .Title }}</h2>
+
+                  {{ if isset .Params "description" }}
+                    <p>{{ .Params.Description }}</p>
+                  {{ end }}
+
+                  {{ if (.GetTerms "tags") }}
+                    <ul class="unstyled-list">
+                      {{ range (.GetTerms "tags") }}
+                        <li class="card__tag">{{ .LinkTitle }}</li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+
+                </div>
+              </a>
+            </article>
+          </li>
+        {{ end }}
+
+      </ul>
+
+    </div>
+  </section>
+{{ end }}
