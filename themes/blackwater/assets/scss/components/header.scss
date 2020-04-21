@@ -57,6 +57,8 @@
 
   &__nav-list {
     &--left {
+      margin-left: -20px;
+
       li {
         @include screen-above($tablet) {
           margin-right: var(--nav-spacing);
@@ -65,6 +67,8 @@
     }
 
     &--right {
+      margin-right: -20px;
+
       li {
         @include screen-above($tablet) {
           margin-left: var(--nav-spacing);

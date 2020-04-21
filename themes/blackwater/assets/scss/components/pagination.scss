@@ -1,0 +1,40 @@
+.pagination {
+  position: relative;
+  border-top: var(--border);
+
+  &::before {
+    @include size(1px, 100%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    background-color: rgba(150, 150, 150, .5);
+    transform: translateX(-50%);
+    content: '';
+  }
+
+  @include screen-below($tablet) {
+    margin-top: 74px;
+  }
+}
+
+.pagination-item {
+  padding: 45px 0;
+  text-transform: uppercase;
+
+  &--next {
+    grid-column: 2 / -1;
+  }
+
+  a {
+    display: block;
+  }
+
+  span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: var(--gray);
+  }
+}

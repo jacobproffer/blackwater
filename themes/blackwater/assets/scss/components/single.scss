@@ -1,0 +1,31 @@
+.single {
+  p,
+  ul,
+  ol,
+  blockquote {
+    margin: 0;
+
+    @include screen-above($tablet) {
+      grid-column: 2;
+    }
+  }
+
+  ul,
+  ol {
+    line-height: 2;
+  }
+
+  img {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin: 40px;
+
+    & + img {
+      margin: 0 0 40px;
+    }
+  }
+
+  &__grid {
+    margin-top: var(--header-spacing);
+  }
+}

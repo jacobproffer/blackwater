@@ -23,7 +23,6 @@
 }
 
 .unstyled-list {
-  padding: 0;
   margin: 0;
 
   li {
@@ -107,11 +106,14 @@
 }
 
 .nav-item {
+  padding: 20px;
   letter-spacing: .2rem;
   text-transform: uppercase;
+  transition: color 300ms ease-in-out, outline 150ms ease-in-out;
 
   @include hover {
     color: var(--red);
+    outline: 2px dotted var(--red);
   }
 }
 
