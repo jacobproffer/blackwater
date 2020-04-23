@@ -9,7 +9,7 @@
 
     <div class="container relative">
 
-      <div class="center">
+      <div class="center" id="page-header">
         <small>Community &amp; Server Updates</small>
         <header>
           <h1 id="news">
@@ -24,10 +24,6 @@
           <li>
             <article class="card">
               <a href="{{ .Permalink }}">
-
-                {{ if isset .Params "thumbnail" }}
-                  <img data-src="{{ .Params.thumbnail }}" alt="">
-                {{ end }}
 
                 <div class="card__body border">
 
