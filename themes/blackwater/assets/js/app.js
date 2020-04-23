@@ -1,9 +1,11 @@
 var mainHeader = document.querySelector(".main-header");
 var headerHeight = mainHeader.offsetHeight;
 var logo = document.querySelector(".main-header__logo img");
+var heroContent = document.querySelector("#hero-content");
 var mobileNavButton = document.querySelector(".main-header__mobile-nav-button");
 var mobileNavigation = document.querySelector(".main-header__mobile-nav");
-var aboutGrid = document.querySelector(".home-about__grid");
+var aboutTopContent = document.querySelectorAll(".home-about-top-content");
+var aboutBottomContent = document.querySelectorAll('.home-about-bottom-content');
 var mediaGrid = document.querySelector(".home-media__grid");
 var lazyImg = document.querySelectorAll("img");
 
@@ -39,8 +41,6 @@ mobileNavButton.addEventListener("click", function() {
 
 var controller = new ScrollMagic.Controller();
 
-gsap.from(logo, {duration: 0.75, opacity: 0, y: -200});
-
 if (lazyImg) {
   lazyImg.forEach(function (el) {
     var LazyScene = new ScrollMagic.Scene({
@@ -62,16 +62,21 @@ if (lazyImg) {
   });
 }
 
-if (aboutGrid) {
+var homeTL = gsap.timeline();
+
+  homeTL.from(logo, {duration: 0.75, opacity: 0, ease: "power1.out", y: -100})
+  homeTL.from(heroContent, {duration: 1, opacity: 0, ease: "power1.out", y: 100})
+  homeTL.from(aboutTopContent, {duration: 1.25, opacity: 0});
+
+if (aboutBottomContent) {
   var aboutTL = gsap.timeline();
 
   aboutTL
-    .from(".home-about__image-left img", {duration: 0.5, opacity: 0, stagger: 0.25, x: -200})
-    .from(".home-about__image-right img", {duration: 0.5, opacity: 0, stagger: 0.25, x: 200});
+    .from(aboutBottomContent, {duration: 1.25, opacity: 0});
 
   var aboutTrigger = new ScrollMagic.Scene({
-    triggerElement: aboutGrid,
-    triggerHook: 0.4,
+    triggerElement: aboutBottomContent,
+    triggerHook: 1,
     duration: 0,
   }).setTween(aboutTL).addTo(controller);
 }
@@ -79,11 +84,11 @@ if (aboutGrid) {
 if (mediaGrid) {
   var imageTL = gsap.timeline();
 
-  imageTL.from(".animate-image", {duration: 0.5, opacity: 0});
+  imageTL.from(".animate-image", {duration: 1.25, opacity: 0});
 
   var imageTrigger = new ScrollMagic.Scene({
     triggerElement: mediaGrid,
-    triggerHook: 0.4,
+    triggerHook: 0.8,
     duration: 0,
   }).setTween(imageTL).addTo(controller);
 }
