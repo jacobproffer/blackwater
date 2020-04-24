@@ -2,6 +2,7 @@ baseURL = "https://blackwater.proffer.dev"
 languageCode = "en-us"
 title = "Blackwater"
 theme = "blackwater"
+pluralizelisttitles = "false"
 
 [taxonomies]
   category = "categories"

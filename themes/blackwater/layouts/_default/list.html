@@ -18,14 +18,14 @@
         </header>
       </div>
 
-      <ul class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap news__list" aria-labelledby="news">
+      <ul class="unstyled-list grid grid--three-column grid--collapse-tablet two-col-gap news__list" aria-labelledby="news">
 
         {{ range sort .Pages }}
           <li>
-            <article class="card">
+            <article class="card border">
               <a href="{{ .Permalink }}">
 
-                <div class="card__body border">
+                <div class="card__body">
 
                   {{ if .PublishDate }}
                     <small>
@@ -35,7 +35,7 @@
                     </small>
                   {{ end }}
 
-                  <h2 class="h3">{{ .Title }}</h2>
+                  <h2 class="h4">{{ .Title }}</h2>
 
                   {{ if isset .Params "description" }}
                     <p>{{ .Params.Description }}</p>
