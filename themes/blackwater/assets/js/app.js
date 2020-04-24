@@ -66,7 +66,7 @@ if (heroContent && aboutTopContent) {
   var homeTL = gsap.timeline();
 
   homeTL.from(logo, {duration: 0.75, opacity: 0, ease: "power1.out", y: -100})
-  homeTL.from(heroContent, {duration: 1, opacity: 0, ease: "power1.out", y: 100})
+  homeTL.from(heroContent, {duration: 1, opacity: 0, ease: "power2.out", y: 100})
   homeTL.from(aboutTopContent, {duration: 1.25, opacity: 0});
 }
 
