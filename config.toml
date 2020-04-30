@@ -17,16 +17,10 @@ pluralizelisttitles = "false"
 [menu]
 
   [[menu.main]]
-    identifier = "Team"
-    name = "Team"
-    url = "/team/"
-    weight = 1
-
-  [[menu.main]]
     identifier = "Intel"
     name = "Intel"
     url = "/intel/"
-    weight = 2
+    weight = 1
 
   [[menu.secondary]]
     identifier = "News"
@@ -34,51 +28,33 @@ pluralizelisttitles = "false"
     url = "/news/"
     weight = 1
 
-  [[menu.secondary]]
-    identifier = "Media"
-    name = "Media"
-    url = "/media/"
-    weight = 3
-
   [[menu.social]]
-    identifier = "Twitter"
-    name = "Twitter"
-    url = "/twitter/"
+    identifier = "Arma Unit"
+    name = "Arma Unit"
+    url = "https://units.arma3.com/unit/arma3blackwater"
     weight = 1
 
   [[menu.social]]
-    identifier = "YouTube"
-    name = "YouTube"
-    url = "/youtube/"
+    identifier = "Steam Group"
+    name = "Steam Group"
+    url = "https://steamcommunity.com/groups/Arma3Blackwater"
     weight = 2
 
   [[menu.social]]
-    identifier = "Discord"
-    name = "Discord"
-    url = "/discord/"
+    identifier = "Mod Pack"
+    name = "Mod Pack"
+    url = "https://steamcommunity.com/sharedfiles/filedetails/?id=2027302046"
     weight = 3
-
-  [[menu.mobile]]
-    identifier = "Team"
-    name = "Team"
-    url = "/team/"
-    weight = 1
 
   [[menu.mobile]]
     identifier = "Intel"
     name = "Intel"
     url = "/intel/"
-    weight = 2
+    weight = 1
 
   [[menu.mobile]]
     identifier = "News"
     name = "News"
     url = "/news/"
-    weight = 3
-
-  [[menu.mobile]]
-    identifier = "Media"
-    name = "Media"
-    url = "/media/"
-    weight = 4
+    weight = 2
 
