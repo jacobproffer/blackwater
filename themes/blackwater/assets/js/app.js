@@ -1,13 +1,12 @@
 var mainHeader = document.querySelector(".main-header");
 var headerHeight = mainHeader.offsetHeight;
-var logo = document.querySelector(".main-header__logo img");
-var heroContent = document.querySelector("#hero-content");
 var mobileNavButton = document.querySelector(".main-header__mobile-nav-button");
 var mobileNavigation = document.querySelector(".main-header__mobile-nav");
 var aboutTopContent = document.querySelectorAll(".home-about-top-content");
 var aboutBottomContent = document.querySelectorAll('.home-about-bottom-content');
 var mediaGrid = document.querySelector(".home-media__grid");
 var lazyImg = document.querySelectorAll("img");
+var card = document.querySelectorAll(".card");
 
 var headroom = new Headroom(mainHeader, {
   offset: 0,
@@ -62,14 +61,6 @@ if (lazyImg) {
   });
 }
 
-if (heroContent && aboutTopContent) {
-  var homeTL = gsap.timeline();
-
-  homeTL.from(logo, {duration: 0.75, opacity: 0, ease: "power1.out", y: -100})
-  homeTL.from(heroContent, {duration: 1, opacity: 0, ease: "power2.out", y: 100})
-  homeTL.from(aboutTopContent, {duration: 1.25, opacity: 0});
-}
-
 if (aboutBottomContent) {
   var aboutTL = gsap.timeline();
 
@@ -93,4 +84,16 @@ if (mediaGrid) {
     triggerHook: 0.8,
     duration: 0,
   }).setTween(imageTL).addTo(controller);
+}
+
+if (card) {
+  var cardTL = gsap.timeline();
+
+  cardTL.from(card, {duration: 1.25, opacity: 0, stagger: 0.25});
+
+  var cardTrigger = new ScrollMagic.Scene({
+    triggerElement: card,
+    triggerHook: 0.8,
+    duration: 0,
+  }).setTween(cardTL).addTo(controller);
 }
