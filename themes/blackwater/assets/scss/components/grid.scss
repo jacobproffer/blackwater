@@ -18,6 +18,10 @@
     grid-template-columns: 50px 1fr;
   }
 
+  &--team {
+    grid-gap: 20px;
+  }
+
   &--collapse-tablet {
     @include screen-below($tablet) {
       grid-template-columns: 1fr;

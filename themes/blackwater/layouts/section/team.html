@@ -1,12 +1,105 @@
 {{ define "main" }}
-  <section class="section-padding">
-    <div class="container">
-      <small>01</small>
-      <header>
-        <h1>
-          {{ .Title }}
-        </h1>
-      </header>
+  <section class="relative team section-padding">
+
+    <div class="absolute image one-hundred">
+      <img class="one-hundred" data-src="/images/altis.jpg" alt="">
     </div>
+
+    <div class="absolute grid-lines one-hundred"></div>
+
+    <div class="container relative">
+
+      <div class="center">
+        <small>Blackwater Team Members</small>
+        <header>
+          <h1 id="page-header">
+            {{ .Title }}
+          </h1>
+        </header>
+      </div>
+
+      <ul class="unstyled-list" aria-labelledby="page-header">
+
+        <li class="team__list-item">
+          <small>01</small>
+          <h2 class="h3" id="command">Command</h2>
+
+          <ul class="unstyled-list grid grid--three-column grid--team" aria-labelledby="command">
+
+            {{ range .Site.Data.command }}
+              <li class="team__member border">
+                <span class="h4">{{ .name }}</span>
+
+                <ul class="unstyled-list">
+                  <li class="team__member-sign">{{ .sign }}</li>
+                  <li class="tag">{{ .title }}</li>
+                </ul>
+              </li>
+            {{ end }}
+
+          </ul>
+        </li>
+
+        <li class="team__list-item">
+          <small>02</small>
+          <h2 class="h3" id="qrf">QRF</h2>
+
+          <ul class="unstyled-list grid grid--three-column grid--team" aria-labelledby="qrf">
+
+            {{ range .Site.Data.qrf }}
+              <li class="team__member border">
+                <span class="h4">{{ .name }}</span>
+
+                <ul class="unstyled-list">
+                  <li class="team__member-sign">{{ .sign }}</li>
+                </ul>
+              </li>
+            {{ end }}
+
+          </ul>
+        </li>
+
+        <li class="team__list-item">
+          <small>03</small>
+          <h2 class="h3" id="recon">Reconnaissance</h2>
+
+          <ul class="unstyled-list grid grid--three-column grid--team" aria-labelledby="recon">
+
+            {{ range .Site.Data.recon }}
+              <li class="team__member border">
+                <span class="h4">{{ .name }}</span>
+
+                <ul class="unstyled-list">
+                  <li class="team__member-sign">{{ .sign }}</li>
+                </ul>
+              </li>
+            {{ end }}
+
+          </ul>
+        </li>
+
+        <li class="team__list-item">
+          <small>04</small>
+          <h2 class="h3" id="aviation">Aviation</h2>
+
+          <ul class="unstyled-list grid grid--three-column grid--team" aria-labelledby="aviation">
+
+            {{ range .Site.Data.aviation }}
+              <li class="team__member border">
+                <span class="h4">{{ .name }}</span>
+
+                <ul class="unstyled-list">
+                  <li class="team__member-sign">{{ .sign }}</li>
+                </ul>
+              </li>
+            {{ end }}
+
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+
   </section>
 {{ end }}
