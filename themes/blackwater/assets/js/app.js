@@ -6,7 +6,7 @@ var aboutTopContent = document.querySelectorAll(".home-about-top-content");
 var aboutBottomContent = document.querySelectorAll('.home-about-bottom-content');
 var mediaGrid = document.querySelector(".home-media__grid");
 var lazyImg = document.querySelectorAll("img");
-var card = document.querySelectorAll(".card");
+var card = document.querySelectorAll(".home-operations .card");
 
 var headroom = new Headroom(mainHeader, {
   offset: 0,
