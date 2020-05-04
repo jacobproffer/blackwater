@@ -1,0 +1,23 @@
+.team {
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  &__list-item {
+    &:first-of-type {
+      margin-top: var(--header-spacing);
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__member {
+    padding: 20px;
+  }
+
+  &__detail-list {
+    margin-top: 24px;
+  }
+}

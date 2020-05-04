@@ -6,7 +6,7 @@ var aboutTopContent = document.querySelectorAll(".home-about-top-content");
 var aboutBottomContent = document.querySelectorAll('.home-about-bottom-content');
 var mediaGrid = document.querySelector(".home-media__grid");
 var lazyImg = document.querySelectorAll("img");
-var card = document.querySelectorAll(".card");
+var card = document.querySelectorAll(".home-operations .card");
 
 var headroom = new Headroom(mainHeader, {
   offset: 0,
@@ -65,7 +65,7 @@ if (aboutBottomContent) {
   var aboutTL = gsap.timeline();
 
   aboutTL
-    .from(aboutBottomContent, {duration: 1.25, opacity: 0});
+    .from(aboutBottomContent, {duration: 1, opacity: 0});
 
   var aboutTrigger = new ScrollMagic.Scene({
     triggerElement: aboutBottomContent,
@@ -77,7 +77,7 @@ if (aboutBottomContent) {
 if (mediaGrid) {
   var imageTL = gsap.timeline();
 
-  imageTL.from(".animate-image", {duration: 1.25, opacity: 0});
+  imageTL.from(".animate-image", {duration: 1, opacity: 0});
 
   var imageTrigger = new ScrollMagic.Scene({
     triggerElement: mediaGrid,
@@ -89,7 +89,7 @@ if (mediaGrid) {
 if (card) {
   var cardTL = gsap.timeline();
 
-  cardTL.from(card, {duration: 1.25, opacity: 0, stagger: 0.25});
+  cardTL.from(card, {duration: 1, opacity: 0, stagger: 0.25});
 
   var cardTrigger = new ScrollMagic.Scene({
     triggerElement: card,

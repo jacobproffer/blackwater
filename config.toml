@@ -17,6 +17,12 @@ pluralizelisttitles = "false"
 [menu]
 
   [[menu.main]]
+    identifier = "Team"
+    name = "Team"
+    url = "/team/"
+    weight = 1
+
+  [[menu.secondary]]
     identifier = "Intel"
     name = "Intel"
     url = "/intel/"
@@ -26,7 +32,7 @@ pluralizelisttitles = "false"
     identifier = "News"
     name = "News"
     url = "/news/"
-    weight = 1
+    weight = 2
 
   [[menu.social]]
     identifier = "Arma Unit"
@@ -47,14 +53,20 @@ pluralizelisttitles = "false"
     weight = 3
 
   [[menu.mobile]]
+    identifier = "Team"
+    name = "Team"
+    url = "/team/"
+    weight = 1
+
+  [[menu.mobile]]
     identifier = "Intel"
     name = "Intel"
     url = "/intel/"
-    weight = 1
+    weight = 2
 
   [[menu.mobile]]
     identifier = "News"
     name = "News"
     url = "/news/"
-    weight = 2
+    weight = 3
 

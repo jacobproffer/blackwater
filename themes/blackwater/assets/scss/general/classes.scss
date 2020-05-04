@@ -138,6 +138,10 @@
     display: block;
   }
 
+  a {
+    height: 100%;
+  }
+
   &__body {
     padding: 40px;
   }
@@ -151,12 +155,12 @@
     display: block;
     margin-top: 10px;
   }
+}
 
-  &__tag {
-    display: inline-block;
-    padding: 4px 8px;
-    margin-top: 20px;
-    background-color: var(--red);
-    border-radius: 4px;
-  }
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-top: 20px;
+  background-color: var(--red);
+  border-radius: 4px;
 }
