@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<section class="relative hero-spacing">
+
+  <div class="absolute image one-hundred">
+    <img class="one-hundred" data-src="/images/altis.jpg" alt="">
+  </div>
+
+  <div class="absolute grid-lines one-hundred"></div>
+
+  <div class="container relative">
+    <div class="center">
+      <small>Area of Operations</small>
+      <header>
+        <h1 id="page-header">{{ .Title }}</h1>
+      </header>
+    </div>
+
+    <ul class="unstyled-list grid grid--list grid--collapse-tablet" aria-labelledby="page-header">
+
+      {{ range .Site.Data.maps }}
+        <li class="item-padding black border">
+          <span class="h4">{{ .title }}</span>
+        </li>
+      {{ end }}
+
+    </ul>
+
+  </div>
+</section>
+
+{{ end }}
