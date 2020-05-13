@@ -30,6 +30,10 @@
   }
 }
 
+.header-spacing {
+  margin-top: var(--header-spacing);
+}
+
 .section-padding {
   padding: var(--padding) 0;
 }

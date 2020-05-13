@@ -1,36 +1,54 @@
 [
   {
-    "title": "Altis"
+    "title": "Altis",
+    "type": "Official",
+    "description": "A volcanic island with a corrugated and mostly rocky landscape."
   },
   {
-    "title": "Blackwater Training Base"
+    "title": "BW Training Base",
+    "type": "Custom",
+    "description": "A small desert terrain that is dedicated to training Blackwater contractors."
   },
   {
-    "image": "/images/blackwater-social.jpg",
-    "title": "Diyala"
+    "title": "Diyala",
+    "type": "Custom",
+    "description": "A province in Iraq that begins near Baghdad and extends to the Iranian border."
   },
   {
-    "title": "Fallujah"
+    "title": "Fallujah",
+    "type": "Custom"
   },
   {
-    "title": "Khoramshahr"
+    "title": "Khoramshahr",
+    "type": "Custom"
   },
   {
-    "title": "Kunduz"
+    "title": "Kunduz",
+    "type": "Custom"
   },
   {
-    "title": "Lythium"
+    "title": "Lythium",
+    "type": "Custom",
+    "description": "Tribal regions of Afghanistan with a large valley, cities and villages."
   },
   {
-    "title": "Malden"
+    "title": "Malden",
+    "type": "Official",
+    "description": "Semi-arid, mountainous landscape with stubby trees and shrubbery."
   },
   {
-    "title": "PR Fata"
+    "title": "PR F.A.T.A",
+    "type": "Custom",
+    "description": "Tribal region of Pakistan with mountainous terrain and populated villages."
   },
   {
-    "title": "Stratis"
+    "title": "Stratis",
+    "type": "Official",
+    "description": "A volcanic region with rocky crevices, steep valleys and vast pine forests."
   },
   {
-    "title": "Tanoa"
+    "title": "Tanoa",
+    "type": "Official",
+    "description": "A South Pacific archipelago with tropical flora, dense jungle and rough terrain."
   }
 ]

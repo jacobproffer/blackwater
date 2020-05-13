@@ -16,11 +16,13 @@
       </header>
     </div>
 
-    <ul class="unstyled-list grid grid--list grid--collapse-tablet" aria-labelledby="page-header">
+    <ul class="unstyled-list grid grid--list grid--collapse-tablet header-spacing" aria-labelledby="page-header">
 
       {{ range .Site.Data.maps }}
         <li class="item-padding black border">
+          <small>{{ .type }}</small>
           <span class="h4">{{ .title }}</span>
+          <p>{{ .description }}</p>
         </li>
       {{ end }}
 
