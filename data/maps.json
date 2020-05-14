@@ -16,15 +16,18 @@
   },
   {
     "title": "Fallujah",
-    "type": "Custom"
+    "type": "Custom",
+    "description": "A city terrain based on the Fallujah region of Iraq with houses, dams and bridges."
   },
   {
     "title": "Khoramshahr",
-    "type": "Custom"
+    "type": "Custom",
+    "description": "An arid micro-terrain of Iran with a number of cities and highways."
   },
   {
     "title": "Kunduz",
-    "type": "Custom"
+    "type": "Custom",
+    "description": "A detailed mountainous terrain based on a real area of Kunduz, Afghanistan."
   },
   {
     "title": "Lythium",
