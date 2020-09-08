@@ -1,10 +1,8 @@
 <section class="home-operations relative section-padding border-top">
 
-  <div class="absolute image one-hundred">
-    <img class="one-hundred" data-src="/images/drone.jpg" alt="">
+  <div class="absolute grid-lines one-hundred">
+    <img class="one-hundred" data-src="/images/bw-sniper.jpg" alt="">
   </div>
-
-  <div class="absolute grid-lines one-hundred"></div>
 
   <div class="container relative">
     <div class="home-operations__content">
@@ -21,7 +19,6 @@
       {{ range sort .Site.Data.operations "Date" "desc" }}
         <li>
           <article class="card">
-            <img data-src="/images/drone.jpg" alt="">
             <div class="card__body border">
               <small>7:30pm CST/US</small>
               <h3>{{ dateFormat "Monday" .Date }}</h3>
