@@ -29,9 +29,9 @@ pluralizelisttitles = "false"
     weight = 2
 
   [[menu.main]]
-    identifier = "Resources"
-    name = "Resources"
-    url = "/resources/"
+    identifier = "Handbook"
+    name = "Handbook"
+    url = "/handbook/"
     weight = 3
 
   [[menu.main]]

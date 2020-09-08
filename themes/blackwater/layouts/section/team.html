@@ -2,7 +2,7 @@
   <section class="relative team hero-spacing">
 
     <div class="absolute image one-hundred">
-      <img class="one-hundred" data-src="/images/altis.jpg" alt="">
+      <img class="one-hundred" data-src="/images/bw-little-birds.jpg" alt="">
     </div>
 
     <div class="absolute grid-lines one-hundred"></div>
@@ -42,11 +42,31 @@
 
         <li class="team__list-item">
           <small>02</small>
-          <h2 class="h3" id="aviation">Aviation</h2>
+          <h2 class="h3" id="contractors">Contractors</h2>
 
-          <ul class="unstyled-list grid grid--list grid--collapse-tablet" aria-labelledby="aviation">
+          <ul class="unstyled-list grid grid--list grid--collapse-tablet" aria-labelledby="contractors">
 
-            {{ range .Site.Data.aviation }}
+            {{ range .Site.Data.contractors }}
+              <li class="item-padding black border">
+                <small>{{ .title }}</small>
+                <span class="h4">{{ .name }}</span>
+
+                <ul class="unstyled-list team__detail-list">
+                  <li class="tag">{{ .sign }}</li>
+                </ul>
+              </li>
+            {{ end }}
+
+          </ul>
+        </li>
+
+        <li class="team__list-item">
+          <small>03</small>
+          <h2 class="h3" id="legacy">Legacy</h2>
+
+          <ul class="unstyled-list grid grid--list grid--collapse-tablet" aria-labelledby="legacy">
+
+            {{ range .Site.Data.legacy }}
               <li class="item-padding black border">
                 <span class="h4">{{ .name }}</span>
 

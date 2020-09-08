@@ -1,12 +1,14 @@
 [
   {
     "name": "Iceman",
-    "sign": "Sierra 3",
+    "title": "Server Admin / Mod Development"
+  },
+  {
+    "name": "Sandman",
     "title": "Server Admin / Mod Development"
   },
   {
     "name": "Chongo",
-    "sign": "Golf 2",
     "title": "Field Officer / Website Development"
   }
 ]
