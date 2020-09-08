@@ -65,11 +65,12 @@ if (aboutBottomContent) {
   var aboutTL = gsap.timeline();
 
   aboutTL
-    .from(aboutBottomContent, {duration: 1, opacity: 0});
+    .from(aboutTopContent, {duration: 0.5, opacity: 0})
+    .from(aboutBottomContent, {duration: 0.5, opacity: 0});
 
   var aboutTrigger = new ScrollMagic.Scene({
-    triggerElement: aboutBottomContent,
-    triggerHook: 1,
+    triggerElement: aboutTopContent,
+    triggerHook: 0.5,
     duration: 0,
   }).setTween(aboutTL).addTo(controller);
 }
@@ -77,11 +78,11 @@ if (aboutBottomContent) {
 if (mediaGrid) {
   var imageTL = gsap.timeline();
 
-  imageTL.from(".animate-image", {duration: 1, opacity: 0});
+  imageTL.from(".animate-image", {duration: 0.5, opacity: 0});
 
   var imageTrigger = new ScrollMagic.Scene({
     triggerElement: mediaGrid,
-    triggerHook: 0.8,
+    triggerHook: 0.5,
     duration: 0,
   }).setTween(imageTL).addTo(controller);
 }
@@ -89,11 +90,11 @@ if (mediaGrid) {
 if (card) {
   var cardTL = gsap.timeline();
 
-  cardTL.from(card, {duration: 1, opacity: 0, stagger: 0.25});
+  cardTL.from(card, {duration: 0.5, opacity: 0, stagger: 0.25});
 
   var cardTrigger = new ScrollMagic.Scene({
     triggerElement: card,
-    triggerHook: 0.8,
+    triggerHook: 0.5,
     duration: 0,
   }).setTween(cardTL).addTo(controller);
 }

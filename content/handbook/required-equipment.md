@@ -4,7 +4,7 @@ description: "List of equipment all Blackwater members are required to have befo
 images: ["/images/blackwater-social.jpg"]
 date: 2020-04-20T13:52:27-04:00
 tags: ["gear"]
-series: ["intel"]
+series: ["resources"]
 ---
 
 All Blackwater - 1st Red Squadron personnel must have the following items prior to an operation:

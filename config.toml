@@ -22,17 +22,23 @@ pluralizelisttitles = "false"
     url = "/team/"
     weight = 1
 
-  [[menu.secondary]]
-    identifier = "Intel"
-    name = "Intel"
-    url = "/intel/"
-    weight = 1
+  [[menu.main]]
+    identifier = "Maps"
+    name = "Maps"
+    url = "/maps/"
+    weight = 2
 
-  [[menu.secondary]]
+  [[menu.main]]
+    identifier = "Handbook"
+    name = "Handbook"
+    url = "/handbook/"
+    weight = 3
+
+  [[menu.main]]
     identifier = "News"
     name = "News"
     url = "/news/"
-    weight = 2
+    weight = 4
 
   [[menu.social]]
     identifier = "Arma Unit"
@@ -59,14 +65,20 @@ pluralizelisttitles = "false"
     weight = 1
 
   [[menu.mobile]]
+    identifier = "Maps"
+    name = "Maps"
+    url = "/maps/"
+    weight = 2
+
+  [[menu.mobile]]
     identifier = "Intel"
     name = "Intel"
     url = "/intel/"
-    weight = 2
+    weight = 3
 
   [[menu.mobile]]
     identifier = "News"
     name = "News"
     url = "/news/"
-    weight = 3
+    weight = 4
 

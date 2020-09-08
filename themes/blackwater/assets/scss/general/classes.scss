@@ -30,6 +30,10 @@
   }
 }
 
+.header-spacing {
+  margin-top: var(--header-spacing);
+}
+
 .section-padding {
   padding: var(--padding) 0;
 }
@@ -56,6 +60,7 @@
 
 .one-hundred {
   @include size(100%);
+  object-fit: cover;
 }
 
 .grid-lines {
@@ -163,4 +168,40 @@
   margin-top: 20px;
   background-color: var(--red);
   border-radius: 4px;
+}
+
+.black {
+  background-color: var(--black);
+}
+
+.item-padding {
+  padding: 20px;
+}
+
+
+.custom-list,
+.single__grid {
+  ul {
+    padding: 0;
+    margin: 24px 0 0;
+  }
+
+  li {
+    list-style: none;
+
+    &:not(:last-of-type) {
+      margin-bottom: 4px;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 22px;
+      background-image: url('/images/bullet.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
 }

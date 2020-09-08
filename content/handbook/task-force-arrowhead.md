@@ -4,7 +4,7 @@ description: "Detailed instructions on how to set-up and use the Task Force Arro
 images: ["/images/blackwater-social.jpg"]
 date: 2020-04-23T19:48:14-04:00
 tags: ["gear"]
-series: ["intel"]
+series: ["resources"]
 ---
 
 1. Make sure the caps lock key is not used for talking in TeamSpeak.
