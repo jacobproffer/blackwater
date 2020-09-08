@@ -31,9 +31,12 @@
                 <small>{{ .title }}</small>
                 <span class="h4">{{ .name }}</span>
 
-                <ul class="unstyled-list team__detail-list">
-                  <li class="tag">{{ .sign }}</li>
-                </ul>
+                {{ if .sign }}
+                  <ul class="unstyled-list team__detail-list">
+                    <li class="tag">{{ .sign }}</li>
+                  </ul>
+                {{ end }}
+
               </li>
             {{ end }}
 
@@ -51,9 +54,12 @@
                 <small>{{ .title }}</small>
                 <span class="h4">{{ .name }}</span>
 
-                <ul class="unstyled-list team__detail-list">
-                  <li class="tag">{{ .sign }}</li>
-                </ul>
+                {{ if .sign }}
+                  <ul class="unstyled-list team__detail-list">
+                    <li class="tag">{{ .sign }}</li>
+                  </ul>
+                {{ end }}
+
               </li>
             {{ end }}
 
@@ -70,9 +76,12 @@
               <li class="item-padding black border">
                 <span class="h4">{{ .name }}</span>
 
-                <ul class="unstyled-list team__detail-list">
-                  <li class="tag">{{ .sign }}</li>
-                </ul>
+                {{ if .sign }}
+                  <ul class="unstyled-list team__detail-list">
+                    <li class="tag">{{ .sign }}</li>
+                  </ul>
+                {{ end }}
+
               </li>
             {{ end }}
 
