@@ -60,6 +60,7 @@
 
 .one-hundred {
   @include size(100%);
+  object-fit: cover;
 }
 
 .grid-lines {
