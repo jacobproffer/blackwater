@@ -177,3 +177,30 @@
 .item-padding {
   padding: 20px;
 }
+
+
+.custom-list {
+  ul {
+    padding: 0;
+    margin: 24px 0 0;
+  }
+
+  li {
+    list-style: none;
+
+    &:not(:last-of-type) {
+      margin-bottom: 4px;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 22px;
+      background-image: url('/images/bullet.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
