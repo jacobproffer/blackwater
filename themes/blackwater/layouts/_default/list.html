@@ -10,7 +10,6 @@
     <div class="container relative">
 
       <div class="center" id="page-header">
-        <small>Community &amp; Server Updates</small>
         <header>
           <h1 id="news">
             {{ .Title }}
@@ -26,14 +25,6 @@
               <a href="{{ .Permalink }}">
 
                 <div class="card__body">
-
-                  {{ if .PublishDate }}
-                    <small>
-                      <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
-                        {{ .PublishDate.Format "January 2, 2006" }}
-                      </time>
-                    </small>
-                  {{ end }}
 
                   <h2 class="h4">{{ .Title }}</h2>
 

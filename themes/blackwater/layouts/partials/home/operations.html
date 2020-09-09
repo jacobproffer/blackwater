@@ -9,14 +9,13 @@
   <div class="container relative">
     <div class="home-operations__content">
 
-      <small>04</small>
-      <header>
+      <header class="center">
         <h2 id="operations">Upcoming Operations</h2>
       </header>
 
     </div>
 
-    <ul class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap home-operations__grid" aria-labelledby="operations">
+    <ul class="unstyled-list home-operations__grid" aria-labelledby="operations">
 
       {{ range sort .Site.Data.operations "Date" "desc" }}
         <li>
