@@ -33,9 +33,9 @@
         </nav>
       {{ end }}
 
-      <button class="button border main-header__mobile-nav-button">Menu</button>
+      <button class="button border main-header__mobile-nav-button" aria-expanded="false" aria-controls="menu">Menu</button>
 
-      <nav class="main-header__mobile-nav">
+      <nav class="main-header__mobile-nav" aria-label="mobile" id="menu">
         <ul class="grid unstyled-list">
 
           {{ $currentPage := . }}
