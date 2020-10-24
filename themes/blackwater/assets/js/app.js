@@ -65,7 +65,6 @@ if (aboutBottomContent) {
   var aboutTL = gsap.timeline();
 
   aboutTL
-    .from(aboutTopContent, {duration: 0.5, opacity: 0})
     .from(aboutBottomContent, {duration: 0.5, opacity: 0});
 
   var aboutTrigger = new ScrollMagic.Scene({

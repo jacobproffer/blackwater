@@ -1,11 +1,11 @@
 [
   {
     "title": "Security",
-    "name": "Boneless Biscuit"
+    "name": "CH-47"
   },
   {
     "title": "Security",
-    "name": "CH-47"
+    "name": "Boneless Biscuit"
   },
   {
     "title": "Reconnaissance",
@@ -16,20 +16,12 @@
     "name": "Gunnarmate"
   },
   {
-    "title": "Security",
-    "name": "Jimmy Boy"
-  },
-  {
     "title": "Reconnaissance",
     "name": "Lightlawyer"
   },
   {
     "title": "Aviation",
     "name": "Operator Badger"
-  },
-  {
-    "title": "Security",
-    "name": "Rangervudoo"
   },
   {
     "title": "Reconnaissance",
@@ -46,5 +38,13 @@
   {
     "title": "Security",
     "name": "Yonif"
+  },
+  {
+    "title": "Security",
+    "name": "Dominus"
+  },
+  {
+    "title": "Reconnaissance",
+    "name": "Metro Conductor Steve"
   }
 ]

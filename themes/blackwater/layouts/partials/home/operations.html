@@ -9,21 +9,20 @@
   <div class="container relative">
     <div class="home-operations__content">
 
-      <header class="center">
+      <div class="center">
         <h2 id="operations">Upcoming Operations</h2>
-      </header>
+      </div>
 
     </div>
 
-    <ul class="unstyled-list home-operations__grid" aria-labelledby="operations">
+    <ul class="unstyled-list grid grid--two-column grid--gap grid--collapse-tablet home-operations__grid" aria-labelledby="operations">
 
       {{ range sort .Site.Data.operations "Date" "desc" }}
         <li>
           <article class="card">
             <div class="card__body border">
+              <h3>{{ .Date }}</h3>
               <small>7:30pm CST/US</small>
-              <h3>{{ dateFormat "Monday" .Date }}</h3>
-              <p>{{ .Description }}</p>
               <span class="tag">{{ .Type }} Operation</span>
             </div>
           </article>

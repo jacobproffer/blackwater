@@ -2,20 +2,14 @@
 
 <section class="relative hero-spacing">
 
-  <div class="absolute image one-hundred">
-    <img class="one-hundred" data-src="/images/bw-pilot-2.jpg" alt="">
-  </div>
-
-  <div class="absolute grid-lines one-hundred"></div>
-
-  <div class="container relative">
+  <div class="container relative higher-z-index">
     <div class="center">
       <header>
         <h1 id="page-header">{{ .Title }}</h1>
       </header>
     </div>
 
-    <ul class="unstyled-list grid grid--list grid--collapse-tablet header-spacing" aria-labelledby="page-header">
+    <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet header-spacing" aria-labelledby="page-header">
 
       {{ range .Site.Data.maps }}
         <li class="item-padding black border">
@@ -28,6 +22,12 @@
     </ul>
 
   </div>
+
+  <div class="absolute image one-hundred">
+    <img class="one-hundred" data-src="/images/bw-pilot-2.jpg" alt="">
+  </div>
+
+  <div class="absolute grid-lines one-hundred"></div>
 </section>
 
 {{ end }}
