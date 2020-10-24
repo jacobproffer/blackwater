@@ -1,12 +1,6 @@
 <section class="home-operations relative section-padding border-top">
 
-  <div class="absolute image one-hundred">
-    <img class="one-hundred" data-src="/images/bw-sniper.jpg" alt="">
-  </div>
-
-  <div class="absolute grid-lines one-hundred"></div>
-
-  <div class="container relative">
+  <div class="container relative higher-z-index">
     <div class="home-operations__content">
 
       <div class="center">
@@ -15,7 +9,7 @@
 
     </div>
 
-    <ul class="unstyled-list grid grid--two-column grid--gap grid--collapse-tablet home-operations__grid" aria-labelledby="operations">
+    <ul class="unstyled-list grid grid--two-column grid--gap grid--collapse-tablet home-operations__grid">
 
       {{ range sort .Site.Data.operations "Date" "desc" }}
         <li>
@@ -32,4 +26,11 @@
     </ul>
 
   </div>
+
+  <div class="absolute image one-hundred">
+    <img class="one-hundred" data-src="/images/bw-sniper.jpg" alt="">
+  </div>
+
+  <div class="absolute grid-lines one-hundred"></div>
+
 </section>
