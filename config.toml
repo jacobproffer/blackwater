@@ -37,13 +37,13 @@ pluralizelisttitles = "false"
   [[menu.social]]
     identifier = "Arma Unit"
     name = "Arma Unit"
-    url = "https://units.arma3.com/unit/arma3blackwater"
+    url = "https://units.arma3.com/unit/blkwtr1rs"
     weight = 1
 
   [[menu.social]]
     identifier = "Steam Group"
     name = "Steam Group"
-    url = "https://steamcommunity.com/groups/Arma3Blackwater"
+    url = "https://steamcommunity.com/groups/BLKWTR1RS"
     weight = 2
 
   [[menu.social]]
