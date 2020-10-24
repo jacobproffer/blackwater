@@ -36,6 +36,12 @@ mobileNavButton.addEventListener("click", function() {
   mainHeader.classList.toggle("main-header--nav-open");
   mobileNavigation.classList.toggle("main-header__mobile-nav--open")
   this.classList.toggle("nav-open");
+
+  if (mobileNavigation.classList.contains('main-header__mobile-nav--open')) {
+    this.setAttribute('aria-expanded', 'true');
+  } else {
+    this.setAttribute('aria-expanded', 'false');
+  }
 });
 
 var controller = new ScrollMagic.Controller();
