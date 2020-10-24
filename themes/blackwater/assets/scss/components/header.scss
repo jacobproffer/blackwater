@@ -114,5 +114,6 @@
     background-color: var(--black);
     border-bottom: var(--border);
     transform: translateY(0);
+    z-index: 10;
   }
 }

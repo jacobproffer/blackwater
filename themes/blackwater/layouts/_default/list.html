@@ -1,13 +1,7 @@
 {{ define "main" }}
-  <section class="relative hero-spacing news">
+  <article class="relative hero-spacing news">
 
-    <div class="absolute image one-hundred">
-      <img class="one-hundred" data-src="/images/bw-pilot-2.jpg" alt="">
-    </div>
-
-    <div class="absolute grid-lines one-hundred"></div>
-
-    <div class="container relative">
+    <div class="container relative higher-z-index">
 
       <div class="center" id="page-header">
         <header>
@@ -17,7 +11,7 @@
         </header>
       </div>
 
-      <ol class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap news__list" aria-labelledby="news">
+      <ol class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap news__list">
 
         {{ range sort .Pages }}
           <li>
@@ -49,5 +43,12 @@
       </ol>
 
     </div>
-  </section>
+
+    <div class="absolute image one-hundred">
+      <img class="one-hundred" data-src="/images/bw-pilot-2.jpg" alt="">
+    </div>
+
+    <div class="absolute grid-lines one-hundred"></div>
+
+  </article>
 {{ end }}

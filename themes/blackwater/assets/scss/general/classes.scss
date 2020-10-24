@@ -113,7 +113,6 @@
 .nav-item {
   padding: 20px;
   letter-spacing: .2rem;
-  text-transform: uppercase;
   transition: color 300ms ease-in-out, outline 150ms ease-in-out;
 
   @include hover {
@@ -149,11 +148,6 @@
 
   &__body {
     padding: 40px;
-  }
-
-  &__time,
-  &__tag {
-    text-transform: uppercase;
   }
 
   &__time {
@@ -211,4 +205,8 @@
     display: block;
     margin-bottom: 40px;
   }
+}
+
+.higher-z-index {
+  z-index: 2;
 }

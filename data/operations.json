@@ -1,8 +1,10 @@
 [
   {
-    "Map": "G.O.S Dariyah",
-    "Date": "2020-04-18",
-    "Type": "Main",
-    "Description": "Conduct ISR of Objective Area, secure the island of Tuvanaka and set-up fortification and defenses on the southern port."
+    "Date": "Wednesday",
+    "Type": "Main"
+  },
+  {
+    "Date": "Saturday",
+    "Type": "Fun"
   }
 ]
