@@ -29,3 +29,12 @@ collections:
       - {label: "Images", name: "images", widget: "list", field: {label: Image, name: image, widget: image}}
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "team"
+    label: "Team"
+    folder: "content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Position", name: "position", widget: "select", options: ["Aviation", "Medical", "Reconnassiance", "Security"]}
+      - {label: "Level", name: "level", widget: "select", options: ["Command", "Contractor"]}

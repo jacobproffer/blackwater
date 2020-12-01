@@ -17,68 +17,20 @@
         </header>
       </div>
 
-      <ul class="unstyled-list" aria-labelledby="page-header">
+      <ul class="unstyled-list">
 
         <li class="team__list-item">
           <h2 class="h3" id="command">Command</h2>
 
           <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="command">
 
-            {{ range .Site.Data.command }}
-              <li class="item-padding black border">
-                <small>{{ .title }}</small>
-                <span class="h4">{{ .name }}</span>
-
-                {{ if .sign }}
-                  <ul class="unstyled-list team__detail-list">
-                    <li class="tag">{{ .sign }}</li>
-                  </ul>
-                {{ end }}
-
-              </li>
-            {{ end }}
-
-          </ul>
-        </li>
-
-        <li class="team__list-item">
-          <h2 class="h3" id="contractors">Contractors</h2>
-
-          <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="contractors">
-
-            {{ range .Site.Data.contractors }}
-              <li class="item-padding black border">
-                <small>{{ .title }}</small>
-                <span class="h4">{{ .name }}</span>
-
-                {{ if .sign }}
-                  <ul class="unstyled-list team__detail-list">
-                    <li class="tag">{{ .sign }}</li>
-                  </ul>
-                {{ end }}
-
-              </li>
-            {{ end }}
-
-          </ul>
-        </li>
-
-        <li class="team__list-item">
-          <h2 class="h3" id="legacy">Legacy</h2>
-
-          <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="legacy">
-
-            {{ range .Site.Data.legacy }}
-              <li class="item-padding black border">
-                <span class="h4">{{ .name }}</span>
-
-                {{ if .sign }}
-                  <ul class="unstyled-list team__detail-list">
-                    <li class="tag">{{ .sign }}</li>
-                  </ul>
-                {{ end }}
-
-              </li>
+            {{ range .Pages }}
+              {{ if eq .Params.level "Command" }}
+                <li class="item-padding black border">
+                  <small>{{ .Params.position }}</small>
+                  <span class="h4">{{ .Title }}</span>
+                </li>
+              {{ end }}
             {{ end }}
 
           </ul>
