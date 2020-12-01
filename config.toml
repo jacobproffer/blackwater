@@ -6,7 +6,6 @@ pluralizelisttitles = "false"
 
 [taxonomies]
   category = "categories"
-  series = "series"
   tag = "tags"
 
 [params]
