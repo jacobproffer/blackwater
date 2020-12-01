@@ -1,5 +1,5 @@
 ---
-title: "Ghost Warrior"
-position: "Reconnaissance"
-level: "Contractor"
+title: DC6R (GW) Eagle-2
+position: Reconnassiance
+level: Contractor
 ---
