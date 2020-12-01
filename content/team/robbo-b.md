@@ -1,5 +1,5 @@
 ---
-title: "Robbo_B"
-position: "Reconnaissance"
-level: "Contractor"
+title: DC6R (RB) Eagle-1
+position: Reconnassiance
+level: Contractor
 ---
