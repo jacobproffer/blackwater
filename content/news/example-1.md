@@ -13,4 +13,6 @@ categories:
 
 Questions were quickly raised as the infamous Blackwater contracting group was awarded the primary security contract for LOGCAP V. With Blackwater returning to Iraq only time will tell how the policital climate in Iraq will react to thier presence.
 
+https://aan-news.proffer.dev/articles/blackwater-iraq-again/
+
 <!--EndFragment-->
