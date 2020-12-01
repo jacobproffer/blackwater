@@ -29,10 +29,16 @@ pluralizelisttitles = "false"
     weight = 2
 
   [[menu.main]]
-    identifier = "Handbook"
-    name = "Handbook"
-    url = "/handbook/"
+    identifier = "Information"
+    name = "Information"
+    url = "/information/"
     weight = 3
+
+  [[menu.main]]
+    identifier = "News"
+    name = "News"
+    url = "/news/"
+    weight = 4
 
   [[menu.social]]
     identifier = "Arma Unit"
@@ -65,8 +71,14 @@ pluralizelisttitles = "false"
     weight = 2
 
   [[menu.mobile]]
-    identifier = "Handbook"
-    name = "Handbook"
-    url = "/handbook/"
+    identifier = "Information"
+    name = "Information"
+    url = "/information/"
     weight = 3
+
+  [[menu.mobile]]
+    identifier = "News"
+    name = "News"
+    url = "/news/"
+    weight = 4
 

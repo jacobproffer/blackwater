@@ -5,7 +5,6 @@ images: ["/images/drone.jpg"]
 date: 2019-05-14T15:31:57-04:00
 tags: ["community"]
 series: ["news"]
-draft: true
 ---
 
 **Bold text example** parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.
