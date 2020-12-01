@@ -1,7 +1,11 @@
 ---
 title: " Blackwater, Iraq...Again"
 date: 2019-04-25T23:22:00.000Z
-description: "By Julian Mendez, AAN "
+description: >-
+  The infamous private military company has returned to Iraq after securing a
+  contract with the announcement of LOGCAP 5.
+
+  By Julian Mendez, AAN 
 images:
   - /images/uploads/blackwater-iraq-again.jpg
 tags:
