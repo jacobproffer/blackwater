@@ -38,6 +38,27 @@
 
       </ul>
 
+      <ul class="unstyled-list">
+
+        <li class="team__list-item">
+          <h2 class="h3" id="command">Contractors</h2>
+
+          <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="command">
+
+            {{ range .Pages }}
+              {{ if not (eq .Params.level "Command") }}
+                <li class="item-padding black border">
+                  <small>{{ .Params.position }}</small>
+                  <span class="h4">{{ .Title }}</span>
+                </li>
+              {{ end }}
+            {{ end }}
+
+          </ul>
+        </li>
+
+      </ul>
+
     </div>
 
   </section>
