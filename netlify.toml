@@ -10,3 +10,9 @@
 
 [context.deploy-preview]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[[redirects]]
+  from = "https://blackwater.proffer.dev/*"
+  to = "https://firstredsquadron.com/:splat"
+  status = 301
+  force = true
