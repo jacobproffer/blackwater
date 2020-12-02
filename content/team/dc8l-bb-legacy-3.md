@@ -1,5 +1,5 @@
 ---
-title: DC8L (BB) Legacy-3
+title: DC8L (BB)
 position: Security
-level: Command
+level: Legacy
 ---

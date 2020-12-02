@@ -1,5 +1,5 @@
 ---
-title: DC8L (SM) Legacy-2
+title: DC8L (SM)
 position: Aviation
-level: Command
+level: Legacy
 ---
