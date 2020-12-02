@@ -1,5 +1,5 @@
 ---
-title: DC9L (AG) Legacy-1
+title: DC9L (AG)
 position: Security
-level: Command
+level: Legacy
 ---
