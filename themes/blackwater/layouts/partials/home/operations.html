@@ -4,12 +4,12 @@
     <div class="home-operations__content">
 
       <div class="center">
-        <h2 id="operations">Upcoming Operations</h2>
+        <h2 id="operations">Operations</h2>
       </div>
 
     </div>
 
-    <ul class="unstyled-list grid grid--two-column grid--gap grid--collapse-tablet home-operations__grid">
+    <ul class="unstyled-list home-operations__grid">
 
       {{ range sort .Site.Data.operations "Date" "desc" }}
         <li>

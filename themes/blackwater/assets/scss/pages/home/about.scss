@@ -4,14 +4,10 @@
   }
 
   &__grid {
-    grid-gap: 0 100px;
+    grid-gap: 50px 100px;
     align-items: center;
 
     @include screen-below($desktopSm) {
-      grid-gap: 0 75px;
-    }
-
-    @include screen-below($laptopSm) {
       grid-gap: 50px;
     }
   }
@@ -40,6 +36,13 @@
   &__content-right {
     @include screen-below($tablet) {
       margin: 0 var(--container-gutter);
+    }
+  }
+
+  &__image-left,
+  &__image-right {
+    @include screen-below($tablet) {
+      margin: auto;
     }
   }
 
