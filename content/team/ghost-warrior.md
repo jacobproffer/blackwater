@@ -1,5 +1,5 @@
 ---
-title: DC6R (GW) Eagle-2
+title: DCR (GW) Eagle-2
 position: Reconnassiance
 level: Contractor
 ---
