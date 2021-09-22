@@ -1,5 +1,5 @@
 ---
-title: DC8L (SM)
+title: DCL (SM) Legacy-4
 position: Aviation
 level: Legacy
 ---
