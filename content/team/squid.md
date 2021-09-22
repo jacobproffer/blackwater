@@ -1,5 +1,5 @@
 ---
-title: DC7A (SD) Whiskey-2
+title: DCL (SD) Legacy-2
 position: Security
 level: Contractor
 ---
