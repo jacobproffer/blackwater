@@ -1,5 +1,5 @@
 ---
-title: DC9L (AG)
+title: DCL (AG) Delta-1
 position: Security
 level: Legacy
 ---
