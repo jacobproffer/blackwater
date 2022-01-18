@@ -1,5 +1,4 @@
 .home-hero {
-  padding: 285px 0 200px;
   overflow: hidden;
 
   p {
@@ -9,13 +8,5 @@
   &__button {
     display: inline-block;
     margin-top: 40px;
-  }
-
-  @include screen-below($desktopSm) {
-    padding: var(--hero-spacing) 0 150px;
-  }
-
-  @include screen-below($laptopSm) {
-    padding: var(--hero-spacing) 0 100px;
   }
 }

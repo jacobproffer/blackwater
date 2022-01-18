@@ -6,10 +6,6 @@
   &__grid {
     grid-gap: 50px 100px;
     align-items: center;
-
-    @include screen-below($desktopSm) {
-      grid-gap: 50px;
-    }
   }
 
   &__content-left {

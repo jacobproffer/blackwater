@@ -6,11 +6,10 @@
   --white: #f5f5f5;
   --red: #ff0000;
   --border: solid 1px rgba(150, 150, 150, .5);
-  --hero-spacing: 214px;
-  --padding: 150px;
   --nav-spacing: 80px;
   --header-spacing: 50px;
   --two-col-gap: 40px;
+  --section-padding: clamp(3.13rem, -4.02rem + 14.88vw, 9.38rem);
 
   @include screen-below($desktop) {
     --container: 1280px;
@@ -19,14 +18,11 @@
 
   @include screen-below($desktopSm) {
     --container: 1080px;
-    --padding: 100px;
     --nav-spacing: 60px;
   }
 
   @include screen-below($laptopSm) {
     --container: 900px;
-    --hero-spacing: 144px;
-    --padding: 75px;
     --nav-spacing: 40px;
     --header-spacing: 25px;
   }
@@ -42,7 +38,6 @@
 
   @include screen-below($mobile) {
     --container: 480px;
-    --padding: 50px;
     --nav-spacing: 20px;
   }
 
