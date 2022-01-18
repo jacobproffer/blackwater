@@ -19,7 +19,9 @@
 }
 
 .hero-spacing {
-  padding: var(--hero-spacing) 0 var(--padding);
+  --hero-top-padding: clamp(9.00rem, -61.50rem + 88.13vw, 17.81rem);
+  --hero-bottom-padding: clamp(6.25rem, -43.75rem + 62.50vw, 12.50rem);
+  padding: var(--hero-top-padding) 0 var(--hero-bottom-padding);
 }
 
 .unstyled-list {
@@ -35,7 +37,7 @@
 }
 
 .section-padding {
-  padding: var(--padding) 0;
+  padding: var(--section-padding) 0;
 }
 
 .border-top {
