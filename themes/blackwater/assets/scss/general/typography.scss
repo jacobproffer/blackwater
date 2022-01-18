@@ -18,23 +18,25 @@ h3,
 }
 
 h1 {
-  @include font-size($h1-font-sizes);
-  letter-spacing: .1rem;
+  --h1-sizes: clamp(2.50rem, -1.50rem + 8.33vw, 6.00rem);
+  font-size: var(--h1-sizes);
 }
 
 h2 {
-  @include font-size($h2-font-sizes);
-  line-height: 1.5;
+  --h2-sizes: clamp(2.00rem, -0.86rem + 5.95vw, 4.50rem);
+  font-size: var(--h2-sizes);
 }
 
 h3,
 .h3 {
-  @include font-size($h3-font-sizes);
+  --h3-sizes: clamp(1.50rem, -1.36rem + 5.95vw, 4.00rem);
+  font-size: var(--h3-sizes);
 }
 
 h4,
 .h4 {
-  @include font-size($h4-font-sizes);
+  --h4-sizes: clamp(1.13rem, 0.13rem + 2.08vw, 2.00rem);
+  font-size: var(--h4-sizes);
 }
 
 p {

@@ -4,7 +4,8 @@
   }
 
   &__grid {
-    grid-gap: 50px 100px;
+    --about-gap: clamp(3.13rem, -6.25rem + 13.89vw, 6.25rem);
+    grid-gap: var(--about-gap);
     align-items: center;
   }
 
