@@ -7,6 +7,11 @@
     --about-gap: clamp(3.13rem, -6.25rem + 13.89vw, 6.25rem);
     grid-gap: var(--about-gap);
     align-items: center;
+
+    @include screen-above($desktop) {
+      max-width: var(--container);
+      margin: auto;
+    }
   }
 
   &__content-left {
