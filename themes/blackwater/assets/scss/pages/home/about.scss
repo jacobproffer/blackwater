@@ -15,7 +15,7 @@
   }
 
   &__content-left {
-    @include screen-above($tablet) {
+    @include screen-between($tablet, $desktop) {
       margin-left: var(--container-gutter);
     }
 
@@ -25,7 +25,7 @@
   }
 
   &__content-right {
-    @include screen-above($tablet) {
+    @include screen-between($tablet, $desktop) {
       margin-right: var(--container-gutter);
     }
 
