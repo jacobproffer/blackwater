@@ -7,7 +7,7 @@
   --red: #ff0000;
   --border: solid 1px rgba(150, 150, 150, .5);
   --nav-spacing: clamp(1.25rem, -3.04rem + 8.93vw, 5.00rem);
-  --header-spacing: 50px;
+  --header-spacing: 3.125rem;
   --two-col-gap: 40px;
   --section-padding: clamp(3.13rem, -4.02rem + 14.88vw, 9.38rem);
 
@@ -22,7 +22,7 @@
 
   @include screen-below($laptopSm) {
     --container: 900px;
-    --header-spacing: 25px;
+    --header-spacing: 1.563rem;
   }
 
   @include screen-below($tablet) {

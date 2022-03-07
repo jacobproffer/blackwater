@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 50px 0;
+  padding: 3.125rem 0;
   background-color: var(--black);
 
   &__grid {
@@ -19,7 +19,7 @@
 
   &__nav-list {
     @include screen-above($tablet) {
-      margin-right: -20px;
+      margin-right: -1.25rem;
     }
 
     @include screen-below($tablet) {

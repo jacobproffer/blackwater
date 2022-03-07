@@ -18,18 +18,18 @@
   img {
     grid-column: 1 / -1;
     justify-self: center;
-    margin: 40px;
+    margin: 2.5rem 0;
 
     & + img {
-      margin: 0 0 40px;
+      margin: 0 0 2.5rem;
 
       @include screen-below($tablet) {
-        margin: 0 0 20px;
+        margin: 0 0 1.25rem;
       }
     }
 
     @include screen-below($tablet) {
-      margin: 20px;
+      margin: 1.25rem 0;
     }
   }
 
