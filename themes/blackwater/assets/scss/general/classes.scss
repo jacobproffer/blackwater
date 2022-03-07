@@ -113,7 +113,7 @@
 }
 
 .nav-item {
-  padding: 20px;
+  padding: 1.25rem;
   letter-spacing: .2rem;
   transition: color 300ms ease-in-out, outline 150ms ease-in-out;
 
@@ -149,21 +149,21 @@
   }
 
   &__body {
-    padding: 40px;
+    padding: 2.5rem;
   }
 
   &__time {
     display: block;
-    margin-top: 10px;
+    margin-top: .625rem;
   }
 }
 
 .tag {
   display: inline-block;
-  padding: 4px 8px;
-  margin-top: 20px;
+  padding: .25rem .5rem;
+  margin-top: 1.25rem;
   background-color: var(--red);
-  border-radius: 4px;
+  border-radius: .25rem;
 }
 
 .black {
@@ -171,7 +171,7 @@
 }
 
 .item-padding {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 
@@ -179,14 +179,14 @@
 .single__grid {
   ul {
     padding: 0;
-    margin: 24px 0 0;
+    margin: 1.5rem 0 0;
   }
 
   li {
     list-style: none;
 
     &:not(:last-of-type) {
-      margin-bottom: 4px;
+      margin-bottom: .25rem;
     }
 
     &::before {
@@ -194,7 +194,7 @@
       display: inline-block;
       width: 10px;
       height: 10px;
-      margin-right: 22px;
+      margin-right: 1.375rem;
       background-image: url('/images/bullet.svg');
       background-size: contain;
       background-repeat: no-repeat;
@@ -205,7 +205,7 @@
 .four-oh-four {
   h1 {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 

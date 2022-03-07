@@ -1,6 +1,6 @@
 .team {
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   &__list-item {
@@ -9,16 +9,16 @@
     }
 
     &:not(:last-of-type) {
-      margin-bottom: 60px;
+      margin-bottom: 3.75rem;
     }
   }
 
   &__member {
-    padding: 20px;
+    padding: 1.25rem;
     background-color: var(--black);
   }
 
   &__detail-list {
-    margin-top: 24px;
+    margin-top: 1.5rem;
   }
 }

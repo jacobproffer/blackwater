@@ -14,12 +14,12 @@
   }
 
   @include screen-below($tablet) {
-    margin-top: 74px;
+    margin-top: 4.625rem;
   }
 }
 
 .pagination-item {
-  padding: 45px 0;
+  padding: 2.8rem 0;
 
   &--next {
     grid-column: 2 / -1;

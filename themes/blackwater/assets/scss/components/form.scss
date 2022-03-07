@@ -6,7 +6,7 @@
   textarea,
   select {
     width: 100%;
-    padding: 20px 25px;
+    padding: 1.25rem 1.563rem;
     color: var(--white);
     background-color: var(--black);
     font-size: inherit;
@@ -32,7 +32,7 @@
   }
 
   select {
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   label {
@@ -59,9 +59,9 @@
       position: absolute;
       top: 26px;
       right: 25px;
-      padding: 3px;
+      padding: .188rem;
       border: solid var(--red);
-      border-width: 0 3px 3px 0;
+      border-width: 0 .188rem .188rem 0;
       pointer-events: none;
       transform: rotate(45deg);
     }
