@@ -14,10 +14,12 @@
       {{ range sort .Site.Data.operations "Date" "desc" }}
         <li>
           <article class="card">
-            <div class="card__body border">
-              <h3>{{ .Date }}</h3>
-              <small>7:30pm CST/US</small>
-              <span class="tag">{{ .Type }} Operation</span>
+            <div class="card__body border grid grid--gap">
+              <div class="order-two">
+                <h3>{{ .Date }}</h3>
+                <time>7:30pm CST/US</time>
+              </div>
+              <span class="tag order-one">{{ .Type }} Operation</span>
             </div>
           </article>
         </li>

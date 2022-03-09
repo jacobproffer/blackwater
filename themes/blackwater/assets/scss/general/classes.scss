@@ -161,8 +161,8 @@
 
 .tag {
   display: inline-block;
+  max-width: max-content;
   padding: .25rem .5rem;
-  margin-top: 1.25rem;
   background-color: var(--red);
   border-radius: .25rem;
 }
@@ -212,4 +212,29 @@
 
 .higher-z-index {
   z-index: 2;
+}
+
+.edge {
+  --offset: -8px;
+  @include size(100%);
+  position: absolute;
+  z-index: -1;
+  bottom: calc(var(--offset) / 2);
+  background-color: var(--red);
+
+  &--left {
+    left: var(--offset);
+  }
+
+  &--right {
+    right: var(--offset);
+  }
+}
+
+.order-one {
+  order: 1;
+}
+
+.order-two {
+  order: 2;
 }

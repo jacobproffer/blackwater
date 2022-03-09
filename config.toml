@@ -16,16 +16,16 @@ pluralizelisttitles = "false"
 [menu]
 
   [[menu.main]]
-    identifier = "Team"
-    name = "Team"
-    url = "/team/"
+    identifier = "Information"
+    name = "Intel"
+    url = "/information/"
     weight = 1
 
   [[menu.main]]
-    identifier = "Information"
-    name = "Information"
-    url = "/information/"
-    weight = 3
+    identifier = "Team"
+    name = "Team"
+    url = "/team/"
+    weight = 2
 
   [[menu.social]]
     identifier = "Arma Unit"
@@ -46,14 +46,14 @@ pluralizelisttitles = "false"
     weight = 3
 
   [[menu.mobile]]
-    identifier = "Team"
-    name = "Team"
-    url = "/team/"
+    identifier = "Information"
+    name = "Intel"
+    url = "/information/"
     weight = 1
 
   [[menu.mobile]]
-    identifier = "Information"
-    name = "Information"
-    url = "/information/"
-    weight = 3
+    identifier = "Team"
+    name = "Team"
+    url = "/team/"
+    weight = 2
 

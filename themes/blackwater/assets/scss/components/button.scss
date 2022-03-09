@@ -1,7 +1,7 @@
 .button {
   padding: 1.25rem 2.5rem;
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--red);
   font-size: 1rem;
   font-weight: 300;
   text-align: center;
@@ -9,7 +9,12 @@
   appearance: none;
   transition: background-color 300ms ease-in-out;
 
+  &:focus {
+    outline: 2px dotted var(--red);
+    outline-offset: 2px;
+  }
+
   @include hover {
-    background-color: var(--red);
+    background-color: var(--black);
   }
 }
