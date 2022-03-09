@@ -22,22 +22,10 @@ pluralizelisttitles = "false"
     weight = 1
 
   [[menu.main]]
-    identifier = "Maps"
-    name = "Maps"
-    url = "/maps/"
-    weight = 2
-
-  [[menu.main]]
     identifier = "Information"
     name = "Information"
     url = "/information/"
     weight = 3
-
-  [[menu.main]]
-    identifier = "News"
-    name = "News"
-    url = "/news/"
-    weight = 4
 
   [[menu.social]]
     identifier = "Arma Unit"
@@ -64,20 +52,8 @@ pluralizelisttitles = "false"
     weight = 1
 
   [[menu.mobile]]
-    identifier = "Maps"
-    name = "Maps"
-    url = "/maps/"
-    weight = 2
-
-  [[menu.mobile]]
     identifier = "Information"
     name = "Information"
     url = "/information/"
     weight = 3
-
-  [[menu.mobile]]
-    identifier = "News"
-    name = "News"
-    url = "/news/"
-    weight = 4
 

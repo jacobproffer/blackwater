@@ -1,6 +1,6 @@
 ---
-title: DCC (CO) Sierra-2
-position: Field Officer / Website Development
+title: Charlie-1
+position: Commanding Officer
 level: Command
 weight: 2
 ---

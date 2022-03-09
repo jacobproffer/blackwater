@@ -5,11 +5,11 @@ name = "blackwater"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
 description = "This is a basic Hugo theme, which can be modified."
-homepage = "http://example.com/"
-tags = ["basic", "simple"]
+homepage = "https://firstredsquadron.com/"
+tags = ["military", "dark"]
 features = ["sass", "js", "minification"]
-min_version = "0.41"
+min_version = "0.93.0"
 
 [author]
-  name = "Elegant Seagulls"
-  homepage = "https://elegantseagulls.com/"
+  name = "Jacob Proffer"
+  homepage = "https://proffer.dev/"

@@ -1,6 +1,6 @@
 ---
-title: "DCC (OD) Sierra-1 "
-position: Server Admin / Mod Development
+title: "Sierra-1 "
+position: Admin / Zeus
 level: Command
 weight: 1
 ---
