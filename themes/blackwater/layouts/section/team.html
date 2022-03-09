@@ -27,8 +27,10 @@
             {{ range .Pages }}
               {{ if eq .Params.level "Command" }}
                 <li class="item-padding black border">
-                  <small>{{ .Params.position }}</small>
-                  <span class="h4">{{ .Title }}</span>
+                  <article class="grid">
+                    <h3 class="h4 order-two">{{ .Title }}</h3>
+                    <span class="tag order-one">{{ .Params.position }}</span>
+                  </article>
                 </li>
               {{ end }}
             {{ end }}
@@ -48,8 +50,10 @@
             {{ range .Pages }}
               {{ if eq .Params.level "Contractor" }}
                 <li class="item-padding black border">
-                  <small>{{ .Params.position }}</small>
-                  <span class="h4">{{ .Title }}</span>
+                  <article class="grid">
+                    <h3 class="h4 order-two">{{ .Title }}</h3>
+                    <span class="tag order-one">{{ .Params.position }}</span>
+                  </article>
                 </li>
               {{ end }}
             {{ end }}
@@ -69,8 +73,10 @@
             {{ range .Pages }}
               {{ if eq .Params.level "Legacy" }}
                 <li class="item-padding black border">
-                  <small>{{ .Params.position }}</small>
-                  <span class="h4">{{ .Title }}</span>
+                  <article class="grid">
+                    <h3 class="h4 order-two">{{ .Title }}</h3>
+                    <span class="tag order-one">{{ .Params.position }}</span>
+                  </article>
                 </li>
               {{ end }}
             {{ end }}

@@ -16,3 +16,9 @@
   to = "https://firstredsquadron.com/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/maps/"
+  to = "/"
+  status = 301
+  force = true

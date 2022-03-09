@@ -11,6 +11,10 @@
     &:not(:last-of-type) {
       margin-bottom: 3.75rem;
     }
+
+    article {
+      row-gap: 20px;
+    }
   }
 
   &__member {
