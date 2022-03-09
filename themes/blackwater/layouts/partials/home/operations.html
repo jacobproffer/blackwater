@@ -4,27 +4,25 @@
     <div class="home-operations__content">
 
       <div class="center">
-        <h2 id="operations">Operations</h2>
+        <h2 id="operations">Current Mission</h2>
       </div>
 
     </div>
 
     <ul class="unstyled-list home-operations__grid">
-
-      {{ range sort .Site.Data.operations "Date" "desc" }}
-        <li>
-          <article class="card">
-            <div class="card__body border grid grid--gap">
-              <div class="order-two">
-                <h3>{{ .Date }}</h3>
-                <time>7:30pm CST/US</time>
-              </div>
-              <span class="tag order-one">{{ .Type }} Operation</span>
+      <li>
+        <article class="card">
+          <div class="card__body border grid grid--gap">
+            <div class="order-three">
+              <h3>Hovering Death</h3>
+              <p><time>Wednesday</time> at <time>20:30</time></p>
+              <p>Move the Ukrainian helicopter fleet, establish security at Faruski Airport.</p>
             </div>
-          </article>
-        </li>
-      {{ end }}
-
+            <span class="tag order-two">Operation</span>
+            <img class="one-hundred order-one" data-src="/images/ukraine-hero.jpg" alt="">
+          </div>
+        </article>
+      </li>
     </ul>
 
   </div>

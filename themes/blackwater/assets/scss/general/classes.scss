@@ -140,7 +140,6 @@
   background-color: var(--black);
 
   a,
-  time,
   img {
     display: block;
   }
@@ -237,4 +236,8 @@
 
 .order-two {
   order: 2;
+}
+
+.order-three {
+  order: 3;
 }
