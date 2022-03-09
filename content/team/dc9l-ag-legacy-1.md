@@ -1,5 +1,5 @@
 ---
 title: Ace1gun
-position: Security
+position: Former Commander
 level: Legacy
 ---

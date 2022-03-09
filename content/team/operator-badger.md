@@ -1,5 +1,5 @@
 ---
 title: Whiskey-1
-position: Aviation
+position: Deputy Commander
 level: Command
 ---

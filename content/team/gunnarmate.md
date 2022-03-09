@@ -1,5 +1,5 @@
 ---
 title: Guardian-1
-position: Medical
-level: Contractor
+position: Staff
+level: Command
 ---
