@@ -19,12 +19,12 @@
 
 [[redirects]]
   from = "/maps/"
-  to = "/"
+  to = "https://firstredsquadron.com/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/news/"
-  to = "/"
+  to = "https://firstredsquadron.com/"
   status = 301
   force = true
