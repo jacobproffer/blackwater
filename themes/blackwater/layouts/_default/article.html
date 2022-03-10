@@ -1,0 +1,22 @@
+<article class="card border">
+  <a href="{{ .Permalink }}">
+
+    <div class="card__body">
+
+      <h2 class="h4">{{ .Title }}</h2>
+
+      {{ if isset .Params "description" }}
+        <p>{{ .Params.Description }}</p>
+      {{ end }}
+
+      {{ if (.GetTerms "tags") }}
+        <ul class="unstyled-list">
+          {{ range (.GetTerms "tags") }}
+            <li class="tag">{{ .LinkTitle }}</li>
+          {{ end }}
+        </ul>
+      {{ end }}
+
+    </div>
+  </a>
+</article>

@@ -1,92 +1,94 @@
 {{ define "main" }}
   <section class="relative team hero-spacing">
 
-    <div class="absolute image one-hundred">
-      <img class="one-hundred" data-src="/images/bw-little-birds.jpg" alt="">
-    </div>
-
-    <div class="absolute grid-lines one-hundred"></div>
-
-    <div class="container relative">
+    <div class="container relative z-index-one">
 
       <div class="center">
-        <header>
-          <h1 id="page-header">
-            {{ .Title }}
-          </h1>
-        </header>
+        <h1 id="page-header">{{ .Title }}</h1>
       </div>
 
       <ul class="unstyled-list">
-
         <li class="team__list-item">
+
           <h2 class="h3" id="command">Command</h2>
 
           <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="command">
 
             {{ range .Pages }}
+
               {{ if eq .Params.level "Command" }}
+
                 <li class="item-padding black border">
-                  <article class="grid">
-                    <h3 class="h4 order-two">{{ .Title }}</h3>
-                    <span class="tag order-one">{{ .Params.position }}</span>
-                  </article>
+
+                  {{ .Render "team-card" }}
+
                 </li>
+
               {{ end }}
+
             {{ end }}
 
           </ul>
         </li>
-
       </ul>
 
       <ul class="unstyled-list">
-
         <li class="team__list-item">
+
           <h2 class="h3" id="command">Contractors</h2>
 
           <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="command">
 
             {{ range .Pages }}
+
               {{ if eq .Params.level "Contractor" }}
+
                 <li class="item-padding black border">
-                  <article class="grid">
-                    <h3 class="h4 order-two">{{ .Title }}</h3>
-                    <span class="tag order-one">{{ .Params.position }}</span>
-                  </article>
+
+                  {{ .Render "team-card" }}
+
                 </li>
+
               {{ end }}
+
             {{ end }}
 
           </ul>
         </li>
-
       </ul>
 
       <ul class="unstyled-list">
-
         <li class="team__list-item">
+
           <h2 class="h3" id="command">Legacy</h2>
 
           <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="command">
 
             {{ range .Pages }}
+
               {{ if eq .Params.level "Legacy" }}
+
                 <li class="item-padding black border">
-                  <article class="grid">
-                    <h3 class="h4 order-two">{{ .Title }}</h3>
-                    <span class="tag order-one">{{ .Params.position }}</span>
-                  </article>
+
+                  {{ .Render "team-card" }}
+
                 </li>
+
               {{ end }}
+
             {{ end }}
 
           </ul>
         </li>
-
       </ul>
 
     </div>
+
+    <div class="absolute image one-hundred">
+      <img class="one-hundred" data-src="/images/bw-little-birds.jpg" alt="">
+    </div>
+
+    <div class="absolute grid-lines one-hundred"></div>
 
   </section>
 {{ end }}
