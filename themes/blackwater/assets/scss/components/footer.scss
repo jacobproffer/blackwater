@@ -3,7 +3,7 @@
   background-color: var(--black);
 
   &__grid {
-    grid-gap: 40px;
+    gap: 40px;
     align-items: center;
 
     @include screen-below($tablet) {
@@ -24,7 +24,7 @@
 
     @include screen-below($tablet) {
       display: grid;
-      grid-gap: 20px;
+      gap: 20px;
       text-align: center;
     }
   }

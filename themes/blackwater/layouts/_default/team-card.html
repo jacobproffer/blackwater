@@ -1,4 +1,10 @@
 <article class="grid">
   <h3 class="h4 order-two">{{ .Title }}</h3>
-  <span class="tag order-one">{{ .Params.position }}</span>
+
+  {{ if isset .Params "position" }}
+    <span class="tag order-one">
+      {{ .Params.position }}
+    </span>
+  {{ end }}
+
 </article>

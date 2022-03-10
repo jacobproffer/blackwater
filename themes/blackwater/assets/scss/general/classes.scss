@@ -75,11 +75,9 @@
   opacity: .85;
 
   &::before {
+    @include size(100%);
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-image: radial-gradient(circle farthest-corner at center bottom, rgba(19, 26, 30, .95) 0%, rgba(19, 26, 30, .95) 100%);
     content: "";
   }
@@ -99,12 +97,8 @@
   object-fit: cover;
 }
 
-.grayscale {
-  filter: grayscale(100%);
-}
-
 .two-col-gap {
-  grid-gap: var(--two-col-gap);
+  gap: var(--two-col-gap);
 }
 
 .collapse-tablet {
@@ -190,10 +184,9 @@
     }
 
     &::before {
+      @include size(10px);
       content: "";
       display: inline-block;
-      width: 10px;
-      height: 10px;
       margin-right: 1.375rem;
       background-image: url('/images/bullet.svg');
       background-size: contain;
