@@ -8,7 +8,7 @@ description = "This is a basic Hugo theme, which can be modified."
 homepage = "https://firstredsquadron.com/"
 tags = ["military", "dark"]
 features = ["sass", "js", "minification"]
-min_version = "0.93.0"
+min_version = "0.94.0"
 
 [author]
   name = "Jacob Proffer"
