@@ -4,40 +4,18 @@
     <div class="container relative higher-z-index">
 
       <div class="center" id="page-header">
-        <header>
-          <h1 id="news">
-            {{ .Title }}
-          </h1>
-        </header>
+        <h1 id="news">{{ .Title }}</h1>
       </div>
 
       <ol class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap news__list">
 
         {{ range sort .Pages }}
+
           <li>
-            <article class="card border">
-              <a href="{{ .Permalink }}">
 
-                <div class="card__body">
-
-                  <h2 class="h4">{{ .Title }}</h2>
-
-                  {{ if isset .Params "description" }}
-                    <p>{{ .Params.Description }}</p>
-                  {{ end }}
-
-                  {{ if (.GetTerms "tags") }}
-                    <ul class="unstyled-list">
-                      {{ range (.GetTerms "tags") }}
-                        <li class="tag">{{ .LinkTitle }}</li>
-                      {{ end }}
-                    </ul>
-                  {{ end }}
-
-                </div>
-              </a>
-            </article>
+            {{ .Render "article" }}
           </li>
+
         {{ end }}
 
       </ol>
