@@ -16,3 +16,9 @@
   to = "https://firstredsquadron.com/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/news"
+  to = "/information"
+  status = 301
+  force = true
