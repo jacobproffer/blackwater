@@ -18,13 +18,7 @@
   force = true
 
 [[redirects]]
-  from = "https://firstredsquadron.com/maps"
-  to = "https://firstredsquadron.com/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://firstredsquadron.com/news"
-  to = "https://firstredsquadron.com/"
+  from = "https://firstredsquadron.com/news/*"
+  to = "https://firstredsquadron.com/:splat"
   status = 301
   force = true
