@@ -1,5 +1,6 @@
 ---
-title: Charlie-1
+title: Chongo
+Sign: Charlie-1
 position: Commanding Officer
 level: Command
 badges:
@@ -16,5 +17,10 @@ badges:
   - Dark Operations Campaign (2021)
   - Christmas Special (2021)
   - Joint Operations
+citations:
+  - Good Conduct Medal (2019)
+  - Good Conduct Medal (2020)
+  - Good Conduct Medal (2021)
+  - PSS / QRF Achievement Medal
 weight: 2
 ---
