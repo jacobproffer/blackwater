@@ -19,7 +19,8 @@
 }
 
 .hero-spacing {
-  --hero-top-padding: clamp(9.00rem, -61.50rem + 88.13vw, 17.81rem);
+  // 150 to 200
+  --hero-top-padding: clamp(9.00rem, calc(8.48rem + 4.46vw), 12.50rem);
   --hero-bottom-padding: clamp(6.25rem, -43.75rem + 62.50vw, 12.50rem);
   padding: var(--hero-top-padding) 0 var(--hero-bottom-padding);
 }
