@@ -5,6 +5,10 @@
 
   &__grid {
     gap: 1px;
+
+    @include screen-below($portrait) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__grid-item {
