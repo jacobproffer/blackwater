@@ -1,0 +1,23 @@
+.team-single {
+  &__headline {
+    margin-bottom: 40px;
+  }
+
+  &__grid {
+    gap: 1px;
+
+    @include screen-below($portrait) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__grid-item {
+    &--accolades {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__subheadline {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,98 @@
+{{ define "main" }}
+
+<article class="hero-spacing team-single">
+
+  <div class="container">
+
+    <div class="center team-single__headline">
+      <h1>{{ .Title }}</h1>
+    </div>
+
+    <ul class="border grid grid--three-column team-single__grid unstyled-list bg-gray">
+
+      {{ if isset .Params "sign" }}
+
+        <li class="team-single__grid-item item-padding bg-black">
+          <h2 class="h4 team-single__subheadline">Call Sign</h2>
+          <span>{{ .Params.sign }}</span>
+        </li>
+
+      {{ end }}
+
+      {{ if isset .Params "position" }}
+
+        <li class="team-single__grid-item item-padding bg-black">
+          <h2 class="h4 team-single__subheadline">Rank</h2>
+          <span>{{ .Params.position }}</span>
+        </li>
+
+      {{ end }}
+
+      {{ if isset .Params "level" }}
+
+        <li class="team-single__grid-item item-padding bg-black">
+          <h2 class="h4 team-single__subheadline">Level</h2>
+          <span>{{ .Params.level }}</span>
+        </li>
+
+      {{ end }}
+
+      <li class="team-single__grid-item team-single__grid-item--accolades team-single__grid grid--two-column grid bg-gray">
+
+        {{ if isset .Params "badges" }}
+
+          <div class="item-padding bg-black">
+
+            <h2 class="h4 team-single__subheadline">Operations</h2>
+
+            <ul class="custom-list">
+
+              {{ range (sort .Params.badges "value" "asc") }}
+
+                <li>
+
+                  {{ . }}
+
+                </li>
+
+              {{ end }}
+
+            </ul>
+
+          </div>
+
+        {{ end }}
+
+        {{ if isset .Params "citations" }}
+
+          <div class="bg-black item-padding">
+
+            <h2 class="h4 team-single__subheadline">Citations</h2>
+
+            <ul class="custom-list">
+
+              {{ range (sort .Params.citations "value" "asc") }}
+
+                <li>
+
+                  {{ . }}
+
+                </li>
+
+              {{ end }}
+
+            </ul>
+
+          </div>
+
+        {{ end }}
+
+      </li>
+
+    </ul>
+
+  </div>
+
+</article>
+
+{{ end }}
