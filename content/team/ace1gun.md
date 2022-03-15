@@ -1,24 +1,20 @@
 ---
-title: CH-47
-sign: Golf-1
-position: Staff
-level: Command
+title: Ace1gun
+sign: Delta-1
+position: Former Commander
+level: Legacy
 badges:
   - Vietnam Campaign
-  - Kabul Airlift
-  - Germany Campaign
-  - Afghanistan Campaign
-  - Iraq Campaign
-  - Russia Campaign
   - Operation Red Flag
   - Pacific Island Campaign
-  - China Campaign
   - Joint Operations
   - Dark Operations Campaign (2020)
-  - Christmas Special (2021)
-  - PMC Screenshot Contest (2021)
 citations:
+  - Good Conduct Medal (2018)
+  - Good Conduct Medal (2019)
   - Good Conduct Medal (2020)
   - Good Conduct Medal (2021)
   - PSS / QRF Achievement Medal
+aliases:
+  - /team/dc91-ag-legacy-1/
 ---

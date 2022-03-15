@@ -1,5 +1,5 @@
 ---
-title: "Iceman"
+title: Iceman
 sign: Sierra-1
 position: Admin / Zeus
 level: Command

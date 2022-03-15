@@ -1,6 +1,6 @@
 ---
 title: Chongo
-Sign: Charlie-1
+sign: Charlie-1
 position: Commanding Officer
 level: Command
 badges:
