@@ -156,6 +156,10 @@
     display: block;
     margin-top: .625rem;
   }
+
+  &__tags {
+    grid-gap: 10px;
+  }
 }
 
 .tag {
