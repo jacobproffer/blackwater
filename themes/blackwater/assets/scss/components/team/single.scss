@@ -11,13 +11,16 @@
     }
   }
 
-  &__grid-item {
-    &--accolades {
-      grid-column: 1 / -1;
-    }
-  }
-
   &__subheadline {
     margin-bottom: 20px;
+  }
+
+  &__mugshot {
+    @include ratio(1, 1);
+
+    img {
+      @include size(100%);
+      object-fit: cover;
+    }
   }
 }
