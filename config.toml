@@ -17,7 +17,7 @@ pluralizelisttitles = "false"
 
   [[menu.main]]
     identifier = "Information"
-    name = "Intel"
+    name = "Information"
     url = "/information/"
     weight = 1
 

@@ -1,10 +1,15 @@
 <article class="grid relative">
+
   <h3 class="h4 order-two">{{ .Title }}</h3>
 
   {{ if isset .Params "position" }}
+
     <span class="tag order-one">
+
       {{ .Params.position }}
+
     </span>
+
   {{ end }}
 
   <a class="absolute inset-zero" href="{{ .Permalink }}" aria-label="View profile of {{ .Title }}"></a>
