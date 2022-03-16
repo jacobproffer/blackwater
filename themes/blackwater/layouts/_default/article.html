@@ -1,26 +1,38 @@
-<article class="card border">
-  <a href="{{ .Permalink }}">
+<article class="card border relative">
+  <div class="card__body">
 
-    <div class="card__body">
+    <div class="grid grid--gap">
 
-      <h2 class="h4">{{ .Title }}</h2>
+      <div class="order-two">
 
-      {{ if isset .Params "description" }}
-        <p>{{ .Params.Description }}</p>
-      {{ end }}
+        <h2 class="h4">{{ .Title }}</h2>
+
+        {{ if isset .Params "description" }}
+
+          <p>{{ .Params.Description }}</p>
+
+        {{ end }}
+
+      </div>
 
       {{ if (.GetTerms "tags") }}
 
-        <ul class="unstyled-list">
+        <ul class="unstyled-list order-one">
 
           {{ range (.GetTerms "tags") }}
+
             <li class="tag">{{ .LinkTitle }}</li>
 
           {{ end }}
 
         </ul>
+
       {{ end }}
 
     </div>
-  </a>
+
+  </div>
+
+  <a class="card__link absolute" href="{{ .Permalink }}" aria-label="View {{ .Title }}"></a>
+
 </article>
