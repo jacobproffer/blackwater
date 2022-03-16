@@ -10,15 +10,21 @@
 
     <ul class="border grid team-single__grid team-single__grid--outer unstyled-list bg-gray">
 
+      {{ $mugshot := "" }}
+
       {{ if isset .Params "mugshot" }}
-        <li class="team-single__grid-item item-padding bg-black">
-            <div class="team-single__mugshot">
-              <div class="content">
-                <img src="{{ .Params.mugshot }}" alt="">
-              </div>
-            </div>
-        </li>
+        {{ $mugshot = .Params.mugshot }}
+      {{ else }}
+        {{ $mugshot = "/images/team/default-mugshot.png" }}
       {{ end }}
+
+      <li class="team-single__grid-item item-padding bg-black">
+        <div class="team-single__mugshot">
+          <div class="content">
+            <img src="{{ $mugshot }}" alt="">
+          </div>
+        </div>
+      </li>
 
       <li class="team-single__grid-item team-single__grid grid--two-column grid bg-gray">
 
