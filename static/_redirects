@@ -1,3 +1,6 @@
 https://blackwater.proffer.dev/* https://firstredsquadron.com/:splat 301!
 /news/* / 301
 /maps/* / 301
+/team/dc81-sm-legacy-2/ /team/sandman/  301
+/team/dc81-bb-legacy-3/ /team/bushbabyb/  301
+/team/dc91-ag-legacy-1/ /team/ace1gun/  301
