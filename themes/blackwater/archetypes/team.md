@@ -4,4 +4,5 @@ mugshot: /images/team/default-mugshot.png
 position:
 level:
 badges:
+citations:
 ---
