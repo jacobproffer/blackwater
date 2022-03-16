@@ -145,6 +145,10 @@
 
   &__body {
     padding: 2.5rem;
+
+    @include screen-below($mobile) {
+      padding: 1.5rem;
+    }
   }
 
   &__time {
