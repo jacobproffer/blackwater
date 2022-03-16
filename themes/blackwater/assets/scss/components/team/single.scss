@@ -6,18 +6,8 @@
   &__grid {
     gap: 1px;
 
-    &--outer {
-      grid-template-columns: .5fr 1fr;
-    }
-
     @include screen-below($portrait) {
       grid-template-columns: 1fr;
-    }
-  }
-
-  &__grid-item {
-    &--info {
-      grid-column: 1 / -1;
     }
   }
 
