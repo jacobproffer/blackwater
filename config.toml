@@ -16,15 +16,15 @@ pluralizelisttitles = "false"
 [menu]
 
   [[menu.main]]
-    identifier = "Information"
+    identifier = "information"
     name = "Information"
-    url = "/information/"
+    pageRef = "/information/"
     weight = 1
 
   [[menu.main]]
-    identifier = "Team"
+    identifier = "team"
     name = "Team"
-    url = "/team/"
+    pageRef = "/team/"
     weight = 2
 
   [[menu.social]]
@@ -46,14 +46,14 @@ pluralizelisttitles = "false"
     weight = 3
 
   [[menu.mobile]]
-    identifier = "Information"
-    name = "Intel"
-    url = "/information/"
+    identifier = "information"
+    name = "Information"
+    pageRef = "/information/"
     weight = 1
 
   [[menu.mobile]]
-    identifier = "Team"
+    identifier = "team"
     name = "Team"
-    url = "/team/"
+    pageRef = "/team/"
     weight = 2
 

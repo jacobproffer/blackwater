@@ -18,13 +18,7 @@
             {{ range .Site.Menus.main }}
 
               <li class="main-header__nav-item">
-                <a
-                  class="nav-item"
-                  href="{{ .URL }}"
-                  {{ if $currentPage.IsMenuCurrent "main" . }}
-                    aria-current="page"
-                  {{ end }}
-                >
+                <a class="nav-item" href="{{ .URL }}" {{ if $currentPage.IsMenuCurrent "main" . }}aria-current="page"{{ end }}>
                   {{ .Name }}
                 </a>
               </li>
