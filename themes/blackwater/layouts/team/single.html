@@ -122,13 +122,13 @@
 
       {{ with .PrevInSection }}
         <a class="button pagination-item pagination-item--prev" href="{{ .Permalink }}">
-          Previous Post
+          View {{ .Title }}
         </a>
       {{ end }}
 
       {{ with .NextInSection }}
         <a class="button pagination-item pagination-item--next" href="{{ .Permalink }}">
-          Next Post
+          View {{ .Title }}
         </a>
       {{ end }}
 
