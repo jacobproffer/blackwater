@@ -1,6 +1,7 @@
 ---
-title: ""
-position: ""
-level: ""
-badges: ""
+title:
+mugshot:
+position:
+level:
+badges:
 ---

@@ -8,36 +8,19 @@
       <h1>{{ .Title }}</h1>
     </div>
 
-    <ul class="border grid grid--three-column team-single__grid unstyled-list bg-gray">
+    <ul class="border grid team-single__grid team-single__grid--outer unstyled-list bg-gray">
 
-      {{ if isset .Params "sign" }}
-
+      {{ if isset .Params "mugshot" }}
         <li class="team-single__grid-item item-padding bg-black">
-          <h2 class="h4 team-single__subheadline">Call Sign</h2>
-          <span>{{ .Params.sign }}</span>
+            <div class="team-single__mugshot">
+              <div class="content">
+                <img src="{{ .Params.mugshot }}" alt="">
+              </div>
+            </div>
         </li>
-
       {{ end }}
 
-      {{ if isset .Params "position" }}
-
-        <li class="team-single__grid-item item-padding bg-black">
-          <h2 class="h4 team-single__subheadline">Rank</h2>
-          <span>{{ .Params.position }}</span>
-        </li>
-
-      {{ end }}
-
-      {{ if isset .Params "level" }}
-
-        <li class="team-single__grid-item item-padding bg-black">
-          <h2 class="h4 team-single__subheadline">Level</h2>
-          <span>{{ .Params.level }}</span>
-        </li>
-
-      {{ end }}
-
-      <li class="team-single__grid-item team-single__grid-item--accolades team-single__grid grid--two-column grid bg-gray">
+      <li class="team-single__grid-item team-single__grid grid--two-column grid bg-gray">
 
         {{ if isset .Params "badges" }}
 
@@ -83,6 +66,37 @@
 
             </ul>
 
+          </div>
+
+        {{ end }}
+
+      </li>
+
+      <li class="team-single__grid-item team-single__grid-item--info team-single__grid grid--three-column grid bg-gray">
+
+        {{ if isset .Params "sign" }}
+
+          <div class="item-padding bg-black">
+            <h2 class="h4 team-single__subheadline">Call Sign</h2>
+            <span>{{ .Params.sign }}</span>
+          </div>
+
+        {{ end }}
+
+        {{ if isset .Params "position" }}
+
+          <div class="item-padding bg-black">
+            <h2 class="h4 team-single__subheadline">Rank</h2>
+            <span>{{ .Params.position }}</span>
+          </div>
+
+        {{ end }}
+
+        {{ if isset .Params "level" }}
+
+          <div class="item-padding bg-black">
+            <h2 class="h4 team-single__subheadline">Level</h2>
+            <span>{{ .Params.level }}</span>
           </div>
 
         {{ end }}

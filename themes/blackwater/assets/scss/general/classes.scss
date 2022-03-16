@@ -196,6 +196,10 @@
       background-image: url('/images/bullet.svg');
       background-size: contain;
       background-repeat: no-repeat;
+
+      @include screen-below($desktop) {
+        margin-right: .75rem;
+      }
     }
   }
 }

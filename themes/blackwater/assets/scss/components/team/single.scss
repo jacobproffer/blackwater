@@ -6,18 +6,31 @@
   &__grid {
     gap: 1px;
 
+    &--outer {
+      grid-template-columns: .5fr 1fr;
+    }
+
     @include screen-below($portrait) {
       grid-template-columns: 1fr;
     }
   }
 
   &__grid-item {
-    &--accolades {
+    &--info {
       grid-column: 1 / -1;
     }
   }
 
   &__subheadline {
     margin-bottom: 20px;
+  }
+
+  &__mugshot {
+    @include ratio(1, 1);
+
+    img {
+      @include size(100%);
+      object-fit: cover;
+    }
   }
 }

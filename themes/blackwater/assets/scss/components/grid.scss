@@ -9,6 +9,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  &--four-column {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   &--single {
     grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 80ch) minmax(1.2rem, 1fr);
   }
