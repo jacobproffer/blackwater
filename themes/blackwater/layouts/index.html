@@ -1,11 +1,15 @@
 {{ define "main" }}
 
-{{ partial "home/hero" . }}
+<article>
 
-{{ partial "home/about" }}
+  {{ partial "home/hero" . }}
 
-{{ partial "home/operations" . }}
+  {{ partial "home/about" }}
 
-{{ partial "home/join" }}
+  {{ partial "home/operations" . }}
+
+  {{ partial "home/join" }}
+
+</article>
 
 {{ end }}
