@@ -103,3 +103,17 @@ if (card) {
     duration: 0,
   }).setTween(cardTL).addTo(controller);
 }
+
+function revealOperation() {
+  var operationTitle = document.querySelector('#operation-title');
+  var operationDescription = document.querySelector('#operation-description');
+  var date = new Date();
+  var today = date.getDay();
+
+  if ((today !== 2 || today !== 3) && operationTitle && operationDescription) {
+    operationTitle.textContent = 'Classified';
+    operationDescription.textContent = 'Mission profile will be revealed the Tuesday prior to the operation.';
+  }
+}
+
+revealOperation();
