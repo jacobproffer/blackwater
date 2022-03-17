@@ -6,7 +6,7 @@
     <div class="grid main-header__grid">
 
       <a class="main-header__logo" href="{{ .Site.BaseURL }}">
-        <img src="/images/paw.svg" alt="Blackwater USA">
+        <img class="main-header__logo-image main-header__logo-image--main" src="/images/paw.svg" alt="Blackwater USA">
       </a>
 
       {{ if .Site.Menus.main }}
@@ -24,6 +24,12 @@
               </li>
 
             {{ end }}
+
+            <li class="main-header__nav-item">
+              <a class="nav-item main-header__logo main-header__logo--discord" href="https://discord.com/invite/vKbQqrrmqF" aria-label="Join the First Red Squadron Discord" target="_blank">
+                <img class="main-header__logo-image main-header__logo-image--discord" src="/images/discord-logo.svg" alt="Discord">
+              </a>
+            </li>
 
           </ul>
         </nav>
@@ -51,6 +57,16 @@
             </li>
 
           {{ end }}
+
+          <li>
+            <a
+              class="nav-item"
+              href="https://discord.com/invite/vKbQqrrmqF"
+              target="_blank"
+            >
+              Discord
+            </a>
+          </li>
 
         </ul>
       </nav>

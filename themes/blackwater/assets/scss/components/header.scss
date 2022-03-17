@@ -37,9 +37,17 @@
 
   &__logo {
     display: inline-block;
+  }
 
-    img {
-      @include size(auto, 50px);
+  &__logo-image {
+    width: auto;
+
+    &--main {
+      height: 50px;
+    }
+
+    &--discord {
+      height: 25px;
     }
   }
 
@@ -52,6 +60,7 @@
   }
 
   &__nav-list {
+    align-items: center;
     margin-right: -1.25rem;
 
     @include screen-below($tablet) {
