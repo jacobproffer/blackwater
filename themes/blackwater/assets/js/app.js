@@ -4,7 +4,6 @@ var mobileNavButton = document.querySelector(".main-header__mobile-nav-button");
 var mobileNavigation = document.querySelector(".main-header__mobile-nav");
 var aboutTopContent = document.querySelectorAll(".home-about-top-content");
 var aboutBottomContent = document.querySelectorAll('.home-about-bottom-content');
-var mediaGrid = document.querySelector(".home-media__grid");
 var lazyImg = document.querySelectorAll("img");
 var card = document.querySelectorAll(".home-operations .card");
 
@@ -67,7 +66,7 @@ if (lazyImg) {
   });
 }
 
-if (aboutBottomContent) {
+if (aboutBottomContent.length > 0) {
   var aboutTL = gsap.timeline();
 
   aboutTL
@@ -80,19 +79,7 @@ if (aboutBottomContent) {
   }).setTween(aboutTL).addTo(controller);
 }
 
-if (mediaGrid) {
-  var imageTL = gsap.timeline();
-
-  imageTL.from(".animate-image", {duration: 0.5, opacity: 0});
-
-  var imageTrigger = new ScrollMagic.Scene({
-    triggerElement: mediaGrid,
-    triggerHook: 0.5,
-    duration: 0,
-  }).setTween(imageTL).addTo(controller);
-}
-
-if (card) {
+if (card.length > 0) {
   var cardTL = gsap.timeline();
 
   cardTL.from(card, {duration: 0.5, opacity: 0, stagger: 0.25});
