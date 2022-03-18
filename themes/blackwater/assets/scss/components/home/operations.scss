@@ -1,12 +1,4 @@
 .home-operations {
-  &__mission-image {
-    padding-bottom: .75rem;
-
-    @include screen-above($tablet) {
-      padding-bottom: 1.5rem;
-    }
-  }
-
   &__content {
     max-width: 100ch;
     margin: auto;
@@ -28,5 +20,33 @@
     display: flex;
     justify-content: center;
     margin-top: 2.5rem;
+  }
+
+  &__grid-item {
+    @include screen-above($mobile) {
+      grid-template-columns: .5fr 1fr;
+    }
+
+    @include screen-below($mobile) {
+      .edge {
+        display: none;
+      }
+    }
+  }
+
+  &__operation-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border-width: 1px 1px 1px 0;
+    border-color: rgba(150, 150, 150, .5);
+    border-style: solid;
+
+    time {
+      color: var(--red);
+    }
+
+    p:last-of-type { margin-bottom: 0; }
   }
 }
