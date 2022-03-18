@@ -1,6 +1,5 @@
 .pagination {
   position: relative;
-  margin-top: var(--hero-bottom-padding);
   border-top: var(--border);
 
   &::before {
@@ -12,10 +11,6 @@
     background-color: rgba(150, 150, 150, .5);
     transform: translateX(-50%);
     content: '';
-  }
-
-  @include screen-below($tablet) {
-    margin-top: 4.625rem;
   }
 }
 
