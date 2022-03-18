@@ -12,7 +12,14 @@
         <li>Security</li>
       </ul>
     </div>
-    <form class="grid grid--two-column form" name="contact" action="/success/" netlify>
+    <form
+      class="grid grid--two-column form"
+      name="contact"
+      id="join-form"
+      action="/success/"
+      netlify
+      netlify-honeypot="bot-field"
+    >
 
       <label class="form__email border" for="email">
         <span class="visually-hide">
@@ -32,14 +39,19 @@
         <span class="visually-hide">
           Age
         </span>
-        <input type="text" id="age" name="age" placeholder="Age" required />
+        <input type="number" id="age" name="age" placeholder="Age" required />
       </label>
 
       <label class="form__hours border" for="hours">
         <span class="visually-hide">
           Arma 3 Hours
         </span>
-        <input type="text" id="hours" name="hours" placeholder="Total Number of Arma 3 Hours" required />
+        <input type="number" id="hours" name="hours" placeholder="Total Number of Arma 3 Hours" required />
+      </label>
+
+      <label class="visually-hide" for="bot-field">
+        Are you a pesky robot?
+        <input type="text" id="bot-field" name="bot-field" />
       </label>
 
       <div class="form__select border">
