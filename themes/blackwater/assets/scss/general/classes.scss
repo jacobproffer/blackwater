@@ -164,12 +164,12 @@
 }
 
 .tag {
-  display: inline-block;
-  max-width: max-content;
-  padding: .25rem .5rem;
+  display: block;
+  height: 100%;
+  padding: .5rem;
   background-color: var(--red);
-  border-radius: .25rem;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .black {

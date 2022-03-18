@@ -21,10 +21,6 @@
     grid-template-columns: 50px 1fr;
   }
 
-  &--list {
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  }
-
   &--gap {
     gap: 20px;
   }

@@ -11,14 +11,11 @@
     &:not(:last-of-type) {
       margin-bottom: 3.75rem;
     }
-
-    article {
-      row-gap: 20px;
-    }
   }
 
-  &__member {
-    padding: 1.25rem;
-    background-color: var(--black);
+  &__member-headline {
+    border-width: 0 1px 1px 1px;
+    border-color: rgba(150, 150, 150, .5);
+    border-style: solid;
   }
 }

@@ -1,35 +1,13 @@
 <article class="card border relative">
   <div class="card__body">
 
-    <div class="grid grid--gap">
+    <h2 class="h4">{{ .Title }}</h2>
 
-      <div class="order-two">
+    {{ if isset .Params "description" }}
 
-        <h2 class="h4">{{ .Title }}</h2>
+      <p>{{ .Params.Description }}</p>
 
-        {{ if isset .Params "description" }}
-
-          <p>{{ .Params.Description }}</p>
-
-        {{ end }}
-
-      </div>
-
-      {{ if (.GetTerms "tags") }}
-
-        <ul class="unstyled-list order-one card__tags">
-
-          {{ range (.GetTerms "tags") }}
-
-            <li class="tag">{{ .LinkTitle }}</li>
-
-          {{ end }}
-
-        </ul>
-
-      {{ end }}
-
-    </div>
+    {{ end }}
 
   </div>
 

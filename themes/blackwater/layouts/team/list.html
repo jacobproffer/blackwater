@@ -8,18 +8,18 @@
 
       <h1 class="center" id="page-header">{{ .Title }}</h1>
 
-      <ul class="unstyled-list">
+      <ol class="unstyled-list">
         <li class="team__list-item">
 
           <h2 class="h3" id="command">Command</h2>
 
-          <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="command">
+          <ul class="unstyled-list center grid grid--three-column grid--gap grid--collapse-tablet" aria-labelledby="command">
 
             {{ range .Pages }}
 
               {{ if eq .Params.level "Command" }}
 
-                <li class="item-padding black border relative">
+                <li class="black relative">
 
                   {{ .Render "team-card" }}
 
@@ -38,13 +38,13 @@
 
           <h2 class="h3" id="command">Contractors</h2>
 
-          <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="command">
+          <ul class="unstyled-list center grid grid--three-column grid--gap grid--collapse-tablet" aria-labelledby="command">
 
             {{ range .Pages }}
 
               {{ if eq .Params.level "Contractor" }}
 
-                <li class="item-padding black border relative">
+                <li class="black relative">
 
                   {{ .Render "team-card" }}
 
@@ -63,13 +63,13 @@
 
           <h2 class="h3" id="command">Legacy</h2>
 
-          <ul class="unstyled-list grid grid--list grid--gap grid--collapse-tablet" aria-labelledby="command">
+          <ul class="unstyled-list center grid grid--three-column grid--gap grid--collapse-tablet" aria-labelledby="command">
 
             {{ range .Pages }}
 
               {{ if eq .Params.level "Legacy" }}
 
-                <li class="item-padding black border relative">
+                <li class="black relative">
 
                   {{ .Render "team-card" }}
 
@@ -81,7 +81,7 @@
 
           </ul>
         </li>
-      </ul>
+      </ol>
 
     </div>
 

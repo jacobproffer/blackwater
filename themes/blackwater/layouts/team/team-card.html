@@ -1,14 +1,16 @@
 <article class="grid">
 
-  <h3 class="h4 order-two">{{ .Title }}</h3>
+  <div class="item-padding order-two team__member-headline">
+    <h3 class="h4 order-two">{{ .Title }}</h3>
+  </div>
 
   {{ if isset .Params "position" }}
 
-    <span class="tag order-one">
+    <div class="tag order-one">
 
       {{ .Params.position }}
 
-    </span>
+    </div>
 
   {{ end }}
 
