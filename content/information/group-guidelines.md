@@ -6,7 +6,6 @@ images:
   - /images/uploads/untitled-1.png
 tags:
   - rules
-  - time
 ---
 
 No disrespectful communication, voice or text, will be allowed. Personnel identified as violating the community guidelines will be counseled by the command staff upon identification of the incident. Reporting of an incident can be made directly to the command staff or the commander at any time. Blackwater 1RS is an active-user-only group. Personnel that exceed three (3) operations will be messaged to identify a reason for absence. If a member exceeds five (5) operations with no verifiable contact will be automatically removed from the group.

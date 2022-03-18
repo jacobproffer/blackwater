@@ -16,5 +16,7 @@
 }
 
 .fade-in {
-  animation-name: fade-in;
+  @media (prefers-reduced-motion: no-preference) {
+    animation-name: fade-in;
+  }
 }
