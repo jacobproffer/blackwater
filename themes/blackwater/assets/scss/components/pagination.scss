@@ -12,21 +12,16 @@
     transform: translateX(-50%);
     content: '';
   }
-
-  @include screen-below($tablet) {
-    margin-top: 4.625rem;
-  }
 }
 
 .pagination-item {
-  padding: 2.8rem 0;
-
   &--next {
     grid-column: 2 / -1;
   }
 
   a {
     display: block;
+    padding: 2.8rem 0;
   }
 
   span {
