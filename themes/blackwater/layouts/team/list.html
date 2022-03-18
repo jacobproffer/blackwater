@@ -1,11 +1,12 @@
 {{ define "main" }}
-  <section class="relative team hero-spacing">
+
+<main id="content">
+
+  <article class="relative team hero-spacing">
 
     <div class="container relative z-index-one">
 
-      <div class="center">
-        <h1 id="page-header">{{ .Title }}</h1>
-      </div>
+      <h1 class="center" id="page-header">{{ .Title }}</h1>
 
       <ul class="unstyled-list">
         <li class="team__list-item">
@@ -85,10 +86,13 @@
     </div>
 
     <div class="absolute image one-hundred">
-      <img class="one-hundred" src="/images/bw-little-birds.jpg" alt="">
+      <img class="one-hundred" src="/images/bw-little-birds.jpg" alt="Aviator contractors flying scout helicopters.">
     </div>
 
     <div class="absolute grid-lines one-hundred"></div>
 
-  </section>
+  </article>
+
+</main>
+
 {{ end }}

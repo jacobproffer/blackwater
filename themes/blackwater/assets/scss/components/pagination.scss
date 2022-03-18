@@ -1,5 +1,6 @@
 .pagination {
   position: relative;
+  margin-top: var(--hero-bottom-padding);
   border-top: var(--border);
 
   &::before {
@@ -19,14 +20,13 @@
 }
 
 .pagination-item {
-  padding: 2.8rem 0;
-
   &--next {
     grid-column: 2 / -1;
   }
 
   a {
     display: block;
+    padding: 2.8rem 0;
   }
 
   span {
