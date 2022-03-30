@@ -1,35 +1,52 @@
-var mainHeader = document.querySelector(".main-header");
-var headerHeight = mainHeader.offsetHeight;
-var mobileNavButton = document.querySelector(".main-header__mobile-nav-button");
-var mobileNavigation = document.querySelector(".main-header__mobile-nav");
-var aboutTopContent = document.querySelectorAll(".home-about-top-content");
-var aboutBottomContent = document.querySelectorAll('.home-about-bottom-content');
-var lazyImg = document.querySelectorAll("img");
-var card = document.querySelectorAll(".home-operations .card");
+const mainHeader = document.querySelector(".main-header");
+const mobileNavButton = document.querySelector(".main-header__mobile-nav-button");
+const mobileNavigation = document.querySelector(".main-header__mobile-nav");
+const fadeIns = document.querySelectorAll('.gsap-fade-in');
+const staggerIn = document.querySelectorAll('.gsap-stagger-in');
 
-var headroom = new Headroom(mainHeader, {
-  offset: 0,
-  tolerance: 0,
-  classes: {
-    pinned: "pinned",
-    unpinned: "unpinned",
-    top: "onTop",
-    bottom: "onBottom",
-    notTop: "scrolled"
-  },
+gsap.registerPlugin(ScrollTrigger);
 
-  onUnpin: function() {
-    if (mainHeader.classList.contains("main-header--nav-open")) {
-      mainHeader.classList.remove("unpinned");
-    }
-  },
-
-  onTop: function() {
-    mainHeader.classList.remove("pinned");
-  }
+ScrollTrigger.create({
+  trigger: 'main',
+  start: 'top top',
+  end: 'max',
+  onEnter: () => mainHeader.classList.add('pinned'),
+  onLeaveBack: () => mainHeader.classList.remove('pinned'),
 });
 
-headroom.init();
+if (fadeIns.length > 0) {
+  fadeIns.forEach((fadeIn) => {
+    gsap.from(fadeIn, {
+      y: 30,
+      autoAlpha: 0,
+      scrollTrigger: {
+        trigger: fadeIn,
+        start: 'top 90%',
+        end: 'bottom top',
+        once: true,
+      }
+    })
+  });
+}
+
+if (staggerIn.length > 0) {
+  staggerIn.forEach((staggers) => {
+    const staggerElements = staggers.children;
+
+    if (staggerElements.length > 0) {
+      ScrollTrigger.batch(staggerElements, {
+        start: 'top 90%',
+        end: 'bottom top',
+        once: true,
+        onEnter: batch => gsap.from(batch, {
+          y: 30,
+          autoAlpha: 0,
+          stagger: 0.2,
+        }),
+      });
+    }
+  });
+}
 
 mobileNavButton.addEventListener("click", function() {
   mainHeader.classList.toggle("main-header--nav-open");
@@ -42,65 +59,3 @@ mobileNavButton.addEventListener("click", function() {
     this.setAttribute('aria-expanded', 'false');
   }
 });
-
-var controller = new ScrollMagic.Controller();
-
-if (lazyImg) {
-  lazyImg.forEach(function (el) {
-    var LazyScene = new ScrollMagic.Scene({
-      triggerElement: el,
-      triggerHook: 1,
-      offset: -300,
-      duration: 0,
-      reverse: false
-    })
-      .on('enter', function () {
-        if (el.getAttribute('data-src')) {
-          el.src = el.getAttribute('data-src')
-        }
-        if (el.getAttribute('data-srcset')) {
-          el.setAttribute('srcset', el.getAttribute('data-srcset'))
-        }
-      })
-      .addTo(controller);
-  });
-}
-
-if (aboutBottomContent.length > 0) {
-  var aboutTL = gsap.timeline();
-
-  aboutTL
-    .from(aboutBottomContent, {duration: 0.5, opacity: 0});
-
-  var aboutTrigger = new ScrollMagic.Scene({
-    triggerElement: aboutTopContent,
-    triggerHook: 0.5,
-    duration: 0,
-  }).setTween(aboutTL).addTo(controller);
-}
-
-if (card.length > 0) {
-  var cardTL = gsap.timeline();
-
-  cardTL.from(card, {duration: 0.5, opacity: 0, stagger: 0.25});
-
-  var cardTrigger = new ScrollMagic.Scene({
-    triggerElement: card,
-    triggerHook: 0.5,
-    duration: 0,
-  }).setTween(cardTL).addTo(controller);
-}
-
-function revealOperation() {
-  var operationTitle = document.querySelector('#operation-title');
-  var operationDescription = document.querySelector('#operation-description');
-  var date = new Date();
-  var today = date.getDay();
-
-  if ((today !== 2 || today !== 3) && operationTitle && operationDescription) {
-    operationTitle.textContent = 'Classified';
-    operationDescription.textContent = 'Mission profile will be revealed the Tuesday prior to the operation.';
-  }
-}
-
-revealOperation();
