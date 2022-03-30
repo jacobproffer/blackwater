@@ -262,3 +262,13 @@
 .bg-gray {
   background-color: rgba(150, 150, 150, .5);
 }
+
+.gsap-fade-in {
+  visibility: hidden;
+}
+
+.gsap-stagger-in {
+  > * {
+    visibility: hidden;
+  }
+}
