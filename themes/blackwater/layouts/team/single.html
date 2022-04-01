@@ -1,114 +1,120 @@
+{{ define "title" }}
+
+  {{ .Title }} - {{ .Site.Title }}
+
+{{ end }}
+
 {{ define "main" }}
 
-<main id="content">
+  <main id="content">
 
-  <article class="hero-spacing team-single container">
+    <article class="hero-spacing team-single container">
 
-    <h1 class="center team-single__headline">{{ .Title }}</h1>
+      <h1 class="center team-single__headline">{{ .Title }}</h1>
 
-    <ul class="border grid grid--three-column team-single__grid unstyled-list bg-gray">
+      <ul class="border grid grid--three-column team-single__grid unstyled-list bg-gray">
 
-      {{ $mugshot := "" }}
+        {{ $mugshot := "" }}
 
-      {{ if isset .Params "mugshot" }}
+        {{ if isset .Params "mugshot" }}
 
-        {{ $mugshot = .Params.mugshot }}
+          {{ $mugshot = .Params.mugshot }}
 
-      {{ else }}
+        {{ else }}
 
-        {{ $mugshot = "/images/team/default-mugshot.png" }}
+          {{ $mugshot = "/images/team/default-mugshot.png" }}
 
-      {{ end }}
+        {{ end }}
 
-      <li class="team-single__grid-item item-padding black">
-        <div class="team-single__mugshot">
-          <div class="content">
-            <img src="{{ $mugshot }}" alt="">
+        <li class="team-single__grid-item item-padding black">
+          <div class="team-single__mugshot">
+            <div class="content">
+              <img src="{{ $mugshot }}" alt="">
+            </div>
           </div>
-        </div>
-      </li>
-
-      {{ if isset .Params "badges" }}
-
-        <li class="team-single__grid-item item-padding black">
-
-          <h2 class="h4 team-single__subheadline">Operations</h2>
-
-          <ul class="custom-list">
-
-            {{ range (sort .Params.badges "value" "asc") }}
-
-              <li>
-
-                {{ . }}
-
-              </li>
-
-            {{ end }}
-
-          </ul>
-
         </li>
 
-      {{ end }}
+        {{ if isset .Params "badges" }}
 
-      {{ if isset .Params "citations" }}
+          <li class="team-single__grid-item item-padding black">
 
-        <li class="team-single__grid-item black item-padding">
+            <h2 class="h4 team-single__subheadline">Operations</h2>
 
-          <h2 class="h4 team-single__subheadline">Citations</h2>
+            <ul class="custom-list">
 
-          <ul class="custom-list">
+              {{ range (sort .Params.badges "value" "asc") }}
 
-            {{ range (sort .Params.citations "value" "asc") }}
+                <li>
 
-              <li>
+                  {{ . }}
 
-                {{ . }}
+                </li>
 
-              </li>
+              {{ end }}
 
-            {{ end }}
+            </ul>
 
-          </ul>
+          </li>
 
-        </li>
+        {{ end }}
 
-      {{ end }}
+        {{ if isset .Params "citations" }}
 
-      {{ if isset .Params "sign" }}
+          <li class="team-single__grid-item black item-padding">
 
-        <li class="team-single__grid-item item-padding black">
-          <h2 class="h4 team-single__subheadline">Call Sign</h2>
-          <span>{{ .Params.sign }}</span>
-        </li>
+            <h2 class="h4 team-single__subheadline">Citations</h2>
 
-      {{ end }}
+            <ul class="custom-list">
 
-      {{ if isset .Params "position" }}
+              {{ range (sort .Params.citations "value" "asc") }}
 
-        <li class="team-single__grid-item item-padding black">
-          <h2 class="h4 team-single__subheadline">Rank</h2>
-          <span>{{ .Params.position }}</span>
-        </li>
+                <li>
 
-      {{ end }}
+                  {{ . }}
 
-      {{ if isset .Params "level" }}
+                </li>
 
-        <li class="team-single__grid-item item-padding black">
-          <h2 class="h4 team-single__subheadline">Level</h2>
-          <span>{{ .Params.level }}</span>
-        </li>
+              {{ end }}
 
-      {{ end }}
+            </ul>
 
-    </ul>
+          </li>
 
-  </article>
+        {{ end }}
 
-</main>
+        {{ if isset .Params "sign" }}
 
-{{ partial "join" }}
+          <li class="team-single__grid-item item-padding black">
+            <h2 class="h4 team-single__subheadline">Call Sign</h2>
+            <span>{{ .Params.sign }}</span>
+          </li>
+
+        {{ end }}
+
+        {{ if isset .Params "position" }}
+
+          <li class="team-single__grid-item item-padding black">
+            <h2 class="h4 team-single__subheadline">Rank</h2>
+            <span>{{ .Params.position }}</span>
+          </li>
+
+        {{ end }}
+
+        {{ if isset .Params "level" }}
+
+          <li class="team-single__grid-item item-padding black">
+            <h2 class="h4 team-single__subheadline">Level</h2>
+            <span>{{ .Params.level }}</span>
+          </li>
+
+        {{ end }}
+
+      </ul>
+
+    </article>
+
+  </main>
+
+  {{ partial "join" }}
 
 {{ end }}
