@@ -1,30 +1,36 @@
+{{ define "title" }}
+
+  Page Not Found - {{ .Site.Title }}
+
+{{ end }}
+
 {{ define "main" }}
 
-<main id="content">
+  <main id="content">
 
-  <article class="relative hero-spacing four-oh-four">
+    <article class="relative hero-spacing four-oh-four">
 
-    <div class="container center relative z-index-one">
-      <div class="grid">
-        <h1 class="order-two" id="404">404</h1>
-        <small class="order-one">Page Not Found</small>
+      <div class="container center relative z-index-one">
+        <div class="grid">
+          <h1 class="order-two" id="404">404</h1>
+          <small class="order-one">Page Not Found</small>
+        </div>
+        <figure>
+          <img src="/images/bw-winter.jpg" alt="Blackwater team members gather around a snowman.">
+          <figcaption class="center">
+            <p>Team members gather around a snowman in 2020.</p>
+          </figcaption>
+        </figure>
       </div>
-      <figure>
-        <img src="/images/bw-winter.jpg" alt="Blackwater team members gather around a snowman.">
-        <figcaption class="center">
-          <p>Team members gather around a snowman in 2020.</p>
-        </figcaption>
-      </figure>
-    </div>
 
-    <div class="absolute image one-hundred">
-      <img class="one-hundred" src="/images/bw-hero.jpg" alt="Blackwater team members pose near a helicopter.">
-    </div>
+      <div class="absolute image one-hundred">
+        <img class="one-hundred" src="/images/bw-hero.jpg" alt="Blackwater team members pose near a helicopter.">
+      </div>
 
-    <div class="absolute grid-lines one-hundred"></div>
+      <div class="absolute grid-lines one-hundred"></div>
 
-  </article>
+    </article>
 
-</main>
+  </main>
 
 {{ end }}

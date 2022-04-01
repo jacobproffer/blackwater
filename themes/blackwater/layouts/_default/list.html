@@ -1,39 +1,45 @@
+{{ define "title" }}
+
+  {{ .Title }} - {{ .Site.Title }}
+
+{{ end }}
+
 {{ define "main" }}
 
-<main id="content">
+  <main id="content">
 
-  <article class="relative hero-spacing news">
+    <article class="relative hero-spacing news">
 
-    <div class="container relative higher-z-index">
+      <div class="container relative higher-z-index">
 
-      <div class="center" id="page-header">
-        <h1 id="news">{{ .Title }}</h1>
+        <div class="center" id="page-header">
+          <h1>{{ .Title }}</h1>
+        </div>
+
+        <ol class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap news__list gsap-stagger-in">
+
+          {{ range sort .Pages }}
+
+            <li>
+
+              {{ .Render "article" }}
+
+            </li>
+
+          {{ end }}
+
+        </ol>
+
       </div>
 
-      <ol class="unstyled-list grid grid--two-column grid--collapse-tablet two-col-gap news__list gsap-stagger-in">
+      <div class="absolute image one-hundred">
+        <img class="one-hundred" src="/images/bw-pilot-2.jpg" alt="Blackwater pilots flying in formation.">
+      </div>
 
-        {{ range sort .Pages }}
+      <div class="absolute grid-lines one-hundred"></div>
 
-          <li>
+    </article>
 
-            {{ .Render "article" }}
-
-          </li>
-
-        {{ end }}
-
-      </ol>
-
-    </div>
-
-    <div class="absolute image one-hundred">
-      <img class="one-hundred" src="/images/bw-pilot-2.jpg" alt="Blackwater pilots flying in formation.">
-    </div>
-
-    <div class="absolute grid-lines one-hundred"></div>
-
-  </article>
-
-</main>
+  </main>
 
 {{ end }}
