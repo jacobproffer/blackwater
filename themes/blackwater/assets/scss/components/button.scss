@@ -1,13 +1,41 @@
 .button {
+  --button-background: var(--border);
+  position: relative;
   padding: 1.25rem 2.5rem;
   color: var(--white);
-  background-color: var(--red);
   font-size: 1rem;
   font-weight: 300;
   text-align: center;
+  inset: 0;
   cursor: pointer;
   appearance: none;
-  transition: background-color 300ms ease-in-out;
+
+  &__background,
+  &__border {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &__border,
+  &__copy {
+    z-index: 2;
+  }
+
+  &__copy {
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  &__background {
+    inset: 0;
+    background-color: var(--button-background);
+    transition: background-color 300ms ease-in-out;
+    z-index: 1;
+  }
+
+  &__border {
+    inset: -.5px;
+  }
 
   &:focus {
     outline: 2px dotted var(--red);
@@ -15,6 +43,7 @@
   }
 
   @include hover {
-    background-color: var(--black);
+    --button-background: var(--black);
+    --border-offset: -2px;
   }
 }

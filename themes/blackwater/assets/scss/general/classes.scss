@@ -41,16 +41,16 @@
   padding: var(--section-padding) 0;
 }
 
+.border-complete {
+  border: 1px solid var(--border);
+}
+
 .border-top {
-  border-top: var(--border);
+  border-top: 1px solid var(--border);
 }
 
 .border-bottom {
-  border-bottom: var(--border);
-}
-
-.border {
-  border: var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .relative {
@@ -109,9 +109,27 @@
 }
 
 .nav-item {
-  padding: 1.25rem;
+  --item-width: 1ch;
+  position: relative;
+  display: block;
   letter-spacing: .2rem;
+  text-transform: uppercase;
   transition: color 300ms ease-in-out, outline 150ms ease-in-out;
+
+  &[aria-current="page"] {
+    --item-width: 100%;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: var(--item-width);
+    height: 1px;
+    background-color: var(--white);
+    opacity: var(--item-border-opacity, 1);
+    content: "";
+  }
 
   @include hover {
     color: var(--red);
@@ -270,5 +288,41 @@
 .gsap-stagger-in {
   > * {
     visibility: hidden;
+  }
+}
+
+.border-wrap {
+  position: absolute;
+  inset: var(--border-offset, -.5px);
+  transition: inset 300ms ease-in-out;
+}
+
+.border {
+  @include size(4px);
+  position: absolute;
+  border: 1px solid var(--white);
+
+  &--top-left,
+  &--top-right {
+    top: 0;
+    border-bottom: none;
+  }
+
+  &--bottom-left,
+  &--bottom-right {
+    bottom: 0;
+    border-top: none;
+  }
+
+  &--top-left,
+  &--bottom-left {
+    left: 0;
+    border-right: none;
+  }
+
+  &--top-right,
+  &--bottom-right {
+    right: 0;
+    border-left: none;
   }
 }

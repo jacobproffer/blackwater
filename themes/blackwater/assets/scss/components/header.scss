@@ -21,7 +21,7 @@
   &.pinned {
     padding: .75rem 0;
     background-color: var(--black);
-    border-bottom: var(--border);
+    border-bottom: 1px solid var(--border);
     transform: translateY(0);
   }
 
@@ -36,6 +36,7 @@
   }
 
   &__logo {
+    --item-border-opacity: 0;
     justify-self: start;
   }
 
@@ -61,10 +62,15 @@
 
   &__nav-list {
     align-items: center;
-    margin-right: -1.25rem;
 
     @include screen-below($tablet) {
       display: none;
+    }
+  }
+
+  &__nav-item {
+    &:not(:last-of-type) {
+      margin-right: 20px;
     }
   }
 
