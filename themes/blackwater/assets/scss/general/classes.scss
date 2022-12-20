@@ -41,7 +41,7 @@
   padding: var(--section-padding) 0;
 }
 
-.border-complete {
+.border {
   border: 1px solid var(--border);
 }
 
@@ -118,6 +118,7 @@
 
   &[aria-current="page"] {
     --item-width: 100%;
+    --item-background: var(--white);
   }
 
   &::before {
@@ -126,14 +127,16 @@
     left: 0;
     width: var(--item-width);
     height: 1px;
-    background-color: var(--white);
+    background-color: var(--item-background, var(--white));
     opacity: var(--item-border-opacity, 1);
+    transition: width 300ms ease-in-out;
     content: "";
   }
 
   @include hover {
+    --item-width: 100%;
+    --item-background: var(--red);
     color: var(--red);
-    outline: 2px dotted var(--red);
   }
 }
 
@@ -240,23 +243,6 @@
   z-index: 2;
 }
 
-.edge {
-  --offset: -8px;
-  @include size(100%);
-  position: absolute;
-  z-index: -1;
-  bottom: calc(var(--offset) / 2);
-  background-color: var(--red);
-
-  &--left {
-    left: var(--offset);
-  }
-
-  &--right {
-    right: var(--offset);
-  }
-}
-
 .order-one {
   order: 1;
 }
@@ -291,13 +277,13 @@
   }
 }
 
-.border-wrap {
+.corner-border-wrap {
   position: absolute;
   inset: var(--border-offset, -.5px);
   transition: inset 300ms ease-in-out;
 }
 
-.border {
+.corner-border {
   @include size(4px);
   position: absolute;
   border: 1px solid var(--white);
