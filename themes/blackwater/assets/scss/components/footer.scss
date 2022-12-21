@@ -38,6 +38,7 @@
   }
 
   &__paw {
-    @include size(50px, 51px);
+    @include size(50px);
+    color: var(--red);
   }
 }

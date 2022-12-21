@@ -1,4 +1,6 @@
 .home-about {
+  --border-offset: -1px;
+
   p {
     margin-bottom: 0;
   }
@@ -7,44 +9,17 @@
     --about-gap: clamp(3.13rem, -6.25rem + 13.89vw, 6.25rem);
     gap: var(--about-gap);
     align-items: center;
-
-    @include screen-above($desktop) {
-      max-width: var(--container);
-      margin: auto;
-    }
   }
 
   &__content-left {
-    @include screen-between($tablet, $desktop) {
-      margin-left: var(--container-gutter);
-    }
-
     @include screen-below($tablet) {
       order: 3;
     }
   }
 
   &__content-right {
-    @include screen-between($tablet, $desktop) {
-      margin-right: var(--container-gutter);
-    }
-
     @include screen-below($tablet) {
       order: 1;
-    }
-  }
-
-  &__content-left,
-  &__content-right {
-    @include screen-below($tablet) {
-      margin: 0 var(--container-gutter);
-    }
-  }
-
-  &__image-left,
-  &__image-right {
-    @include screen-below($tablet) {
-      margin: auto;
     }
   }
 
