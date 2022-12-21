@@ -33,7 +33,18 @@
         </nav>
       {{ end }}
 
-      <button class="button border main-header__mobile-nav-button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <button class="button main-header__mobile-nav-button" aria-expanded="false" aria-controls="menu">
+        <div class="button__background"></div>
+        <div class="corner-border-wrap">
+          <div class="corner-border corner-border--top-left"></div>
+          <div class="corner-border corner-border--top-right"></div>
+          <div class="corner-border corner-border--bottom-left"></div>
+          <div class="corner-border corner-border--bottom-right"></div>
+        </div>
+        <div class="button__copy">
+          Menu
+        </div>
+      </button>
 
       <nav class="main-header__mobile-nav" aria-label="mobile" id="menu">
         <ul class="grid unstyled-list">
