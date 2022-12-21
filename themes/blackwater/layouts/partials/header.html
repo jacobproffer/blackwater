@@ -1,12 +1,10 @@
 <header class="main-header">
   <div class="container">
 
-    <a class="main-header__skip-link nav-item" href="#content">Skip to Main Content</a>
-
     <div class="grid main-header__grid">
 
-      <a class="main-header__logo" href="{{ .Site.BaseURL }}">
-        <img class="main-header__logo-image main-header__logo-image--main" src="/images/paw.svg" alt="Go home.">
+      <a class="main-header__logo main-header__logo---main" href="{{ .Site.BaseURL }}" aria-label="Go home.">
+        {{ partial "paw" }}
       </a>
 
       {{ if .Site.Menus.main }}
@@ -27,7 +25,7 @@
 
             <li class="main-header__nav-item">
               <a class="nav-item main-header__logo main-header__logo--discord" href="https://discord.com/invite/vKbQqrrmqF" aria-label="Join the First Red Squadron Discord" target="_blank">
-                <img class="main-header__logo-image main-header__logo-image--discord" src="/images/discord-logo.svg" alt="Discord">
+                {{ partial "discord" }}
               </a>
             </li>
 

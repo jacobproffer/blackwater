@@ -1,26 +1,21 @@
 .main-header {
   @include size(100%, auto);
+  --logo-color: var(--red);
   position: fixed;
   z-index: 9;
-  padding: .938rem 0;
-  background-color: transparent;
+  padding: var(--header-padding, .938rem) 0;
+  background-color: var(--header-background, transparent);
   overflow-y: visible;
   transition: padding 300ms ease-in-out, transform 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border 300ms ease-in-out;
   will-change: transform;
-
-  a {
-    &[aria-current="page"] {
-      color: var(--red);
-    }
-  }
 
   &.unpinned {
     transform: translateY(-100px);
   }
 
   &.pinned {
-    padding: .75rem 0;
-    background-color: var(--black);
+    --header-padding: .75rem;
+    --header-background: var(--black);
     border-bottom: 1px solid var(--border);
     transform: translateY(0);
   }
@@ -38,17 +33,23 @@
   &__logo {
     --item-border-opacity: 0;
     justify-self: start;
-  }
-
-  &__logo-image {
-    width: auto;
+    color: var(--logo-color);
+    transition: color 300ms ease-in-out;
 
     &--main {
-      height: 50px;
+      @include size(50px);
     }
 
     &--discord {
-      height: 25px;
+      @include size(35px);
+    }
+
+    @include hover {
+      color: var(--white);
+    }
+
+    svg {
+      @include size(100%);
     }
   }
 
@@ -70,7 +71,7 @@
 
   &__nav-item {
     &:not(:last-of-type) {
-      margin-right: 20px;
+      margin-right: 40px;
     }
   }
 
@@ -108,21 +109,6 @@
 
     @include screen-above($tablet) {
       display: none;
-    }
-  }
-
-  &__skip-link {
-    position: fixed;
-    top: -10em;
-    left: 50%;
-    padding: 1.25rem;
-    background-color: var(--black);
-    border: var(--border);
-    transform: translateX(-50%);
-    transition: top 300ms ease-in-out;
-
-    &:focus {
-      top: 0;
     }
   }
 

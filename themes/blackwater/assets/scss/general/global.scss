@@ -4,7 +4,7 @@
   --content: 100ch;
   --black: #181818;
   --white: #f5f5f5;
-  --red: #ff0000;
+  --red: #81472a;
   --border: rgb(75, 75, 75);
   --nav-spacing: clamp(1.25rem, -3.04rem + 8.93vw, 5.00rem);
   --header-spacing: 3.125rem;
@@ -35,15 +35,7 @@
   }
 
   @include screen-below($mobile) {
-    --container: 480px;
-  }
-
-  @include screen-below($mobile-sm) {
-    --container: 345px;
-  }
-
-  @include screen-below($mobile-x-sm) {
-    --container: 300px;
+    --container: calc(100% - 40px);
   }
 }
 

@@ -1,13 +1,13 @@
 .button {
-  --button-background: var(--border);
+  --button-background: var(--red);
   position: relative;
   padding: 1.25rem 2.5rem;
   color: var(--white);
   font-size: 1rem;
-  font-weight: 300;
   text-align: center;
   inset: 0;
   cursor: pointer;
+  border: none;
   appearance: none;
 
   &__background,
@@ -43,7 +43,7 @@
   }
 
   @include hover {
-    --button-background: var(--black);
+    --button-background: var(--border);
     --border-offset: -2px;
   }
 }
